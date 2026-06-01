@@ -377,11 +377,8 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <form className="form" action="https://formsubmit.co/paola.leite.adv@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="Novo pedido de contacto - Paola Leite Eikeset Advocacia" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://paolaleiteeikeset.pt/#contacto" />
+            <form className="form" action="https://formspree.io/f/mgoqjnzy" method="POST">
+              <input type="hidden" name="subject" value="Novo pedido de contacto - Paola Leite Eikeset Advocacia" />
               <input name="nome" placeholder={t.formName} type="text" required />
               <input name="email" placeholder={t.formEmail} type="email" required />
               <input name="telefone" placeholder={t.formPhone} type="tel" />
