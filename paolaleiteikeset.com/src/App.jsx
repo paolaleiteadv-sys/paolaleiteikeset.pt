@@ -215,12 +215,12 @@ export default function App() {
   const t = useMemo(() => content[lang], [lang]);
 
   const scrollToContact = () => {
-    const contactSection = document.getElementById("contacto");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
+  window.open(
+    "https://calendar.app.google/jpvJzFyvvqbBJvU36",
+    "_blank",
+    "noopener,noreferrer"
+  );
+};
   const links = [
     ["#inicio", t.nav[0]],
     ["#servicos", t.nav[1]],
