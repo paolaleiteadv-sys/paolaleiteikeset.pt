@@ -335,8 +335,25 @@ function BlogArticlePage() {
         </div>
       </header>
 
-      <main className="section section-white" style={{ paddingTop: "130px" }}>
-        <div className="container" style={{ maxWidth: "850px" }}>
+      <main
+        className="section section-white"
+        style={{
+          background: "linear-gradient(180deg, #f8f6f2 0%, #ffffff 35%)",
+          paddingTop: "130px",
+          paddingBottom: "70px",
+        }}
+      >
+        <div
+          className="container"
+          style={{
+            maxWidth: "780px",
+            background: "#ffffff",
+            padding: "56px",
+            borderRadius: "20px",
+            boxShadow: "0 20px 50px rgba(15, 39, 71, 0.08)",
+            border: "1px solid rgba(15, 39, 71, 0.06)",
+          }}
+        >
           <a href="/" style={{ color: "#0f2747", fontWeight: 700, textDecoration: "none" }}>
             ← Voltar ao início
           </a>
@@ -345,17 +362,61 @@ function BlogArticlePage() {
             {article.category}
           </p>
 
-          <h1>{article.title}</h1>
-          <p className="lead">{article.description}</p>
+          <h1
+            style={{
+              fontFamily: "Inter, sans-serif",
+              fontSize: "2.8rem",
+              fontWeight: 700,
+              lineHeight: "1.1",
+              letterSpacing: "-0.03em",
+              color: "#0f2747",
+              marginBottom: "20px",
+            }}
+          >
+            {article.title}
+          </h1>
+          <p
+            className="lead"
+            style={{
+              fontSize: "1.08rem",
+              lineHeight: "1.75",
+              color: "#555",
+              marginBottom: "16px",
+            }}
+          >
+            {article.description}
+          </p>
 
           <p style={{ color: "#777", marginTop: "18px" }}>
             {article.author} · {new Date(article.date).toLocaleDateString("pt-PT")}
           </p>
 
           {article.content.map((block) => (
-            <section key={block.heading} style={{ marginTop: "36px" }}>
-              <h2>{block.heading}</h2>
-              <p>{block.text}</p>
+            <section key={block.heading} style={{ marginTop: "32px" }}>
+              <h2
+                style={{
+                  fontFamily: "Inter, sans-serif",
+                  color: "#0f2747",
+                  fontSize: "1.2rem",
+                  fontWeight: 600,
+                  letterSpacing: "-0.01em",
+                  marginTop: "32px",
+                  marginBottom: "10px",
+                }}
+              >
+                {block.heading}
+              </h2>
+              <p
+                style={{
+                  fontFamily: "Inter, sans-serif",
+                  fontSize: "1.05rem",
+                  lineHeight: "1.85",
+                  color: "#444",
+                  marginBottom: "0",
+                }}
+              >
+                {block.text}
+              </p>
             </section>
           ))}
 
