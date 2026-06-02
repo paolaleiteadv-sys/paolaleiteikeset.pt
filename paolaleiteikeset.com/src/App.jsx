@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const content = {
   pt: {
-    nav: ["Início", "Serviços", "Portugal–Noruega", "Direito Laboral", "Direito Português", "Traduções", "Contacto"],
+    nav: ["Início", "Serviços", "Portugal–Noruega", "Direito Laboral", "Direito Português", "Traduções", "Artigos", "Contacto"],
     headerButton: "Agendar consulta",
     heroTitle: "Advocacia especializada em Portugal e Noruega",
     heroText: "Advocacia Internacional • Fiscalidade Nórdica • Traduções Certificadas",
@@ -70,7 +70,7 @@ const content = {
     footerText: "Advocacia Internacional · Fiscalidade Nórdica · Responsabilidade Limitada",
   },
   en: {
-    nav: ["Home", "Services", "Portugal–Norway", "Employment Law", "Portuguese Law", "Translations", "Contact"],
+    nav: ["Home", "Services", "Portugal–Norway", "Employment Law", "Portuguese Law", "Translations", "Articles", "Contact"],
     headerButton: "Book consultation",
     heroTitle: "Legal practice specialised in Portugal and Norway",
     heroText: "International Law • Nordic Taxation • Certified Translations",
@@ -138,11 +138,66 @@ const content = {
   },
 };
 
+
+const blogArticles = [
+  {
+    slug: "planeamento-fiscal-portugal-noruega",
+    title: "Planeamento Fiscal Internacional: A Convenção entre Portugal e Noruega",
+    description:
+      "Saiba como funciona a Convenção para Evitar a Dupla Tributação entre Portugal e Noruega e como proteger os seus rendimentos e património.",
+    date: "2026-06-02",
+    category: "Fiscalidade Internacional PT–NO",
+    author: "Dra. Paola Leite Eikeset",
+    content: [
+      {
+        heading: "Introdução",
+        text:
+          "Para profissionais portugueses estabelecidos na Noruega ou investidores noruegueses com interesses em Portugal, a gestão da carga tributária é uma prioridade estratégica. A questão central é invariavelmente a mesma: como mitigar o risco de bitributação sobre o rendimento e o património?",
+      },
+      {
+        heading: "A Convenção para Evitar a Dupla Tributação",
+        text:
+          "A resposta reside na Convenção para Evitar a Dupla Tributação celebrada entre Portugal e Noruega. Este tratado internacional visa coordenar as competências tributárias dos dois Estados, garantindo que o contribuinte não seja penalizado fiscalmente por operar em múltiplas jurisdições.",
+      },
+      {
+        heading: "O Fenómeno da Dupla Tributação Jurídica",
+        text:
+          "A dupla tributação ocorre quando dois Estados reivindicam o direito de tributar o mesmo rendimento, ao mesmo sujeito passivo e no mesmo período temporal. No contexto Portugal–Noruega, isto manifesta-se frequentemente em rendimentos do trabalho dependente ou independente, rendimentos prediais, dividendos, juros, mais-valias e pensões.",
+      },
+      {
+        heading: "Mecanismos de Resolução da Convenção",
+        text:
+          "A Convenção estabelece critérios de desempate e métodos de eliminação da dupla tributação, incluindo a definição do Estado com competência tributária prioritária, a limitação de retenções na fonte e o reconhecimento do imposto pago no Estado da fonte.",
+      },
+      {
+        heading: "O Pilar da Residência Fiscal",
+        text:
+          "A determinação da residência fiscal é o ponto de partida de qualquer planeamento fiscal internacional. A análise não depende apenas do critério dos 183 dias, devendo considerar a habitação permanente, o centro de interesses vitais, as relações familiares, a atividade económica predominante e as ligações pessoais e patrimoniais.",
+      },
+      {
+        heading: "Situações Práticas Frequentes",
+        text:
+          "Entre os cenários mais relevantes estão os trabalhadores portugueses na Noruega, commuters entre os dois países, investidores imobiliários, pensionistas, empresários com atividade internacional e famílias com património distribuído entre Portugal e Noruega.",
+      },
+      {
+        heading: "Porque Procurar Aconselhamento Jurídico?",
+        text:
+          "Erros na determinação da residência fiscal ou na aplicação da Convenção podem resultar em dupla tributação indevida, liquidações adicionais, coimas fiscais, inspeções tributárias e dificuldades junto da Autoridade Tributária ou do Skatteetaten.",
+      },
+      {
+        heading: "Conclusão",
+        text:
+          "A Convenção para Evitar a Dupla Tributação entre Portugal e Noruega constitui um instrumento fundamental de segurança jurídica. Um planeamento fiscal adequado permite proteger rendimentos, evitar tributação indevida e garantir conformidade legal nos dois países.",
+      },
+    ],
+  },
+];
+
 function runSelfTests() {
   const languages = ["pt", "en"];
   const tests = [
     ["both languages exist", Boolean(content.pt && content.en)],
-    ["both languages have seven nav labels", languages.every((l) => content[l].nav.length === 7)],
+    ["both languages have eight nav labels", languages.every((l) => content[l].nav.length === 8)],
     ["both languages have four services", languages.every((l) => content[l].services.length === 4)],
     ["both languages have five highlights", languages.every((l) => content[l].highlights.length === 5)],
     ["both languages have eight employment law items", languages.every((l) => content[l].labourItems.length === 8)],
@@ -210,9 +265,131 @@ function BrandHeader() {
   );
 }
 
+
+function BlogList() {
+  return (
+    <section id="artigos" className="section section-white">
+      <div className="container">
+        <div className="section-heading">
+          <SectionLabel>Artigos</SectionLabel>
+          <h2>Conhecimento Jurídico Internacional</h2>
+          <p className="lead">
+            Artigos sobre fiscalidade internacional, residência fiscal, trabalho na Noruega,
+            heranças internacionais e questões jurídicas entre Portugal e Noruega.
+          </p>
+        </div>
+
+        <div className="grid-three">
+          {blogArticles.map((article) => (
+            <Card key={article.slug}>
+              <p className="section-label">{article.category}</p>
+              <h3>{article.title}</h3>
+              <p>{article.description}</p>
+              <a
+                href={`/blog/${article.slug}`}
+                style={{ color: "#0f2747", fontWeight: 700, textDecoration: "none" }}
+              >
+                Ler artigo →
+              </a>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function BlogArticlePage() {
+  const slug = window.location.pathname.replace("/blog/", "").replace(/\/$/, "");
+  const article = blogArticles.find((item) => item.slug === slug);
+
+  if (!article) {
+    document.title = "Artigo não encontrado | Paola Leite Eikeset Advocacia";
+    return (
+      <div className="site">
+        <main className="section section-white">
+          <div className="container" style={{ maxWidth: "850px" }}>
+            <a href="/" style={{ color: "#0f2747", fontWeight: 700, textDecoration: "none" }}>
+              ← Voltar ao início
+            </a>
+            <h1 style={{ marginTop: "40px" }}>Artigo não encontrado</h1>
+            <p>O artigo solicitado não foi encontrado.</p>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  document.title = `${article.title} | Paola Leite Eikeset Advocacia`;
+
+  return (
+    <div className="site">
+      <header className="header">
+        <div className="header-inner">
+          <BrandHeader />
+          <nav className="nav">
+            <a href="/">Início</a>
+            <a href="/#artigos" className="active">Artigos</a>
+            <a href="/#contacto">Contacto</a>
+          </nav>
+        </div>
+      </header>
+
+      <main className="section section-white" style={{ paddingTop: "130px" }}>
+        <div className="container" style={{ maxWidth: "850px" }}>
+          <a href="/" style={{ color: "#0f2747", fontWeight: 700, textDecoration: "none" }}>
+            ← Voltar ao início
+          </a>
+
+          <p className="section-label" style={{ marginTop: "40px" }}>
+            {article.category}
+          </p>
+
+          <h1>{article.title}</h1>
+          <p className="lead">{article.description}</p>
+
+          <p style={{ color: "#777", marginTop: "18px" }}>
+            {article.author} · {new Date(article.date).toLocaleDateString("pt-PT")}
+          </p>
+
+          {article.content.map((block) => (
+            <section key={block.heading} style={{ marginTop: "36px" }}>
+              <h2>{block.heading}</h2>
+              <p>{block.text}</p>
+            </section>
+          ))}
+
+          <div className="card" style={{ marginTop: "50px" }}>
+            <h3>Necessita de apoio jurídico especializado?</h3>
+            <p>
+              A Dra. Paola Leite Eikeset presta assessoria jurídica especializada em
+              fiscalidade internacional PT–NO, apoiando trabalhadores, empresários,
+              investidores e famílias com interesses em Portugal e na Noruega.
+            </p>
+            <p>
+              Agende uma consulta através do formulário de contacto ou envie um e-mail para
+              paola.leite.adv@gmail.com.
+            </p>
+            <a
+              href="/"
+              style={{ color: "#0f2747", fontWeight: 700, textDecoration: "none" }}
+            >
+              Contactar →
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+}
+
 export default function App() {
   const [lang, setLang] = useState("pt");
   const t = useMemo(() => content[lang], [lang]);
+
+  if (window.location.pathname.startsWith("/blog/")) {
+    return <BlogArticlePage />;
+  }
 
   const scrollToContact = () => {
   window.open(
@@ -228,7 +405,8 @@ export default function App() {
     ["#direito-laboral", t.nav[3]],
     ["#direito-portugues", t.nav[4]],
     ["#traducoes", t.nav[5]],
-    ["#contacto", t.nav[6]],
+    ["#artigos", t.nav[6]],
+    ["#contacto", t.nav[7]],
   ];
 
   return (
@@ -358,6 +536,8 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        <BlogList />
 
         <section id="contacto" className="section">
           <div className="container contact-box">
