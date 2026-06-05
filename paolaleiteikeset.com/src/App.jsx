@@ -429,7 +429,7 @@ function BlogArticlePage() {
             </p>
             <p>
               Agende uma consulta através do formulário de contacto ou envie um e-mail para
-              paola.leite.adv@gmail.com.
+              info@paolaleiteikeset.pt.
             </p>
             <a
               href="/"
@@ -609,7 +609,7 @@ export default function App() {
               <div className="contact-details">
                 <p><ContactIcon>T</ContactIcon> +351 926 483 420</p>
                 <p><ContactIcon>@</ContactIcon> @paola.leite.adv</p>
-                <p><ContactIcon>E</ContactIcon> paola.leite.adv@gmail.com</p>
+                <p><ContactIcon>E</ContactIcon> info@paolaleiteikeset.pt</p>
                 <div className="offices">
                   <p className="offices-label">{t.officesLabel}</p>
                   <p><ContactIcon>P</ContactIcon> Rua de Camões, 219, 4.º Esquerdo · 4000-145 Porto</p>
