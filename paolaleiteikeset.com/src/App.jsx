@@ -148,6 +148,8 @@ const blogArticles = [
     date: "2026-06-02",
     category: "Fiscalidade Internacional PT–NO",
     author: "Dra. Paola Leite Eikeset",
+    keywords:
+      "planeamento fiscal Portugal Noruega, Convenção dupla tributação Portugal Noruega, residência fiscal Portugal Noruega, fiscalidade internacional PT NO",
     content: [
       {
         heading: "Introdução",
@@ -188,6 +190,69 @@ const blogArticles = [
         heading: "Conclusão",
         text:
           "A Convenção para Evitar a Dupla Tributação entre Portugal e Noruega constitui um instrumento fundamental de segurança jurídica. Um planeamento fiscal adequado permite proteger rendimentos, evitar tributação indevida e garantir conformidade legal nos dois países.",
+      },
+    ],
+  },
+  {
+    slug: "comprei-imovel-portugal-vivo-noruega",
+    title: "Comprei imóvel em Portugal, mas vivo na Noruega: quais são as consequências fiscais?",
+    description:
+      "A compra de um imóvel em Portugal por residentes fiscais na Noruega pode gerar implicações relacionadas com IMI, AIMI, rendimentos prediais, mais-valias e residência fiscal.",
+    date: "2026-06-05",
+    category: "Fiscalidade Internacional PT–NO",
+    author: "Dra. Paola Leite Eikeset",
+    keywords:
+      "imóvel em Portugal residente na Noruega, residência fiscal Portugal Noruega, IMI emigrantes Noruega, dupla tributação Portugal Noruega, comprar casa em Portugal vivendo na Noruega",
+    content: [
+      {
+        heading: "Introdução",
+        text:
+          "A aquisição de um imóvel em Portugal por residentes fiscais na Noruega é uma situação cada vez mais frequente. Seja para férias, investimento, regresso futuro ao país ou utilização pela família, a compra de um imóvel pode gerar diversas obrigações fiscais que muitos proprietários desconhecem.",
+      },
+      {
+        heading: "Comprar um imóvel em Portugal não altera automaticamente a residência fiscal",
+        text:
+          "A aquisição de um imóvel em Portugal não significa, por si só, que o proprietário passe a ser residente fiscal português. Contudo, a existência de uma habitação em território português pode ser um dos elementos analisados pela Autoridade Tributária quando existe dúvida sobre a efetiva residência fiscal de uma pessoa.",
+      },
+      {
+        heading: "Imposto Municipal sobre Imóveis (IMI)",
+        text:
+          "Após a aquisição de um imóvel em Portugal, o proprietário fica sujeito ao pagamento anual de IMI. O valor depende de diversos fatores, incluindo o Valor Patrimonial Tributário, a taxa fixada pelo município, o tipo de imóvel e a sua localização. O IMI é devido independentemente de o proprietário residir em Portugal ou no estrangeiro.",
+      },
+      {
+        heading: "Adicional ao IMI (AIMI)",
+        text:
+          "Em determinadas situações poderá também existir sujeição ao Adicional ao IMI. O AIMI incide sobre património imobiliário de valor mais elevado e pode afetar pessoas singulares e coletivas. A análise deve ser efetuada caso a caso, atendendo ao valor global do património imobiliário detido em Portugal.",
+      },
+      {
+        heading: "Arrendamento do imóvel",
+        text:
+          "Quando o imóvel é arrendado, os rendimentos obtidos em Portugal ficam sujeitos a tributação portuguesa. Nestas situações, o proprietário poderá ter de declarar os rendimentos em Portugal, cumprir obrigações declarativas junto da Autoridade Tributária e declarar os mesmos rendimentos na Noruega, quando exigido pela legislação norueguesa.",
+      },
+      {
+        heading: "Venda futura do imóvel",
+        text:
+          "Caso o imóvel venha a ser vendido no futuro, poderão surgir consequências fiscais relacionadas com as mais-valias imobiliárias. A tributação dependerá da data de aquisição, do valor de aquisição, do valor de venda, das despesas elegíveis e do regime fiscal aplicável à data da alienação.",
+      },
+      {
+        heading: "A compra de casa em Portugal pode originar problemas de residência fiscal?",
+        text:
+          "Uma situação relativamente frequente ocorre quando a escritura é celebrada indicando que o imóvel se destina a habitação própria e permanente. Quando o comprador é efetivamente residente fiscal na Noruega, podem surgir dúvidas quanto à compatibilidade entre essa declaração e a residência fiscal declarada no estrangeiro.",
+      },
+      {
+        heading: "Obrigações junto da Autoridade Tributária",
+        text:
+          "Os proprietários não residentes devem assegurar que o domicílio fiscal está corretamente registado, que as notificações eletrónicas são regularmente consultadas, que existe representante fiscal quando legalmente exigido e que as declarações fiscais são entregues dentro dos prazos legais.",
+      },
+      {
+        heading: "Quando procurar aconselhamento jurídico?",
+        text:
+          "É aconselhável procurar aconselhamento especializado quando adquiriu imóvel em Portugal sendo residente fiscal na Noruega, recebeu notificações da Autoridade Tributária, existe dúvida quanto à residência fiscal, pretende arrendar ou vender o imóvel, ou beneficiou de isenções ou reduções fiscais na aquisição.",
+      },
+      {
+        heading: "Conclusão",
+        text:
+          "A compra de um imóvel em Portugal por residentes fiscais na Noruega é perfeitamente compatível com a manutenção da residência fiscal naquele país. Contudo, a aquisição pode gerar implicações relacionadas com IMI, AIMI, rendimentos prediais, mais-valias e eventual escrutínio da situação de residência fiscal.",
       },
     ],
   },
@@ -299,6 +364,58 @@ function BlogList() {
   );
 }
 
+
+function upsertMetaTag(name, contentValue, attribute = "name") {
+  let element = document.querySelector(`meta[${attribute}="${name}"]`);
+
+  if (!element) {
+    element = document.createElement("meta");
+    element.setAttribute(attribute, name);
+    document.head.appendChild(element);
+  }
+
+  element.setAttribute("content", contentValue);
+}
+
+function upsertCanonical(url) {
+  let element = document.querySelector('link[rel="canonical"]');
+
+  if (!element) {
+    element = document.createElement("link");
+    element.setAttribute("rel", "canonical");
+    document.head.appendChild(element);
+  }
+
+  element.setAttribute("href", url);
+}
+
+function upsertJsonLd(article, canonicalUrl) {
+  const existing = document.getElementById("article-json-ld");
+  if (existing) existing.remove();
+
+  const script = document.createElement("script");
+  script.id = "article-json-ld";
+  script.type = "application/ld+json";
+  script.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    author: {
+      "@type": "Person",
+      name: article.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Paola Leite Eikeset Advocacia",
+    },
+    datePublished: article.date,
+    mainEntityOfPage: canonicalUrl,
+  });
+
+  document.head.appendChild(script);
+}
+
 function BlogArticlePage() {
   const slug = window.location.pathname.replace("/blog/", "").replace(/\/$/, "");
   const article = blogArticles.find((item) => item.slug === slug);
@@ -320,7 +437,20 @@ function BlogArticlePage() {
     );
   }
 
+  const canonicalUrl = `${window.location.origin}/blog/${article.slug}`;
+
   document.title = `${article.title} | Paola Leite Eikeset Advocacia`;
+  upsertMetaTag("description", article.description);
+  upsertMetaTag("keywords", article.keywords || "Portugal Noruega, fiscalidade internacional, residência fiscal, advocacia internacional");
+  upsertMetaTag("author", article.author);
+  upsertMetaTag("robots", "index, follow");
+  upsertMetaTag("og:title", article.title, "property");
+  upsertMetaTag("og:description", article.description, "property");
+  upsertMetaTag("og:type", "article", "property");
+  upsertMetaTag("og:url", canonicalUrl, "property");
+  upsertMetaTag("og:site_name", "Paola Leite Eikeset Advocacia", "property");
+  upsertCanonical(canonicalUrl);
+  upsertJsonLd(article, canonicalUrl);
 
   return (
     <div className="site">
