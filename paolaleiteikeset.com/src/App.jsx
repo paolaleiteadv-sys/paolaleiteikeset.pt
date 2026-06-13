@@ -373,12 +373,108 @@ text:
 heading: "Conclusão",
 text:
 "A Convenção para Evitar a Dupla Tributação entre Portugal e Noruega é um instrumento essencial para trabalhadores, empresários, investidores e pensionistas com ligações aos dois países."
-}
-]
-}
+const blogArticles = [
+  {
+    slug: "planeamento-fiscal-portugal-noruega",
+    title: "Planeamento Fiscal Internacional: A Convenção entre Portugal e Noruega",
+    description:
+      "Saiba como funciona a Convenção para Evitar a Dupla Tributação entre Portugal e Noruega e como proteger os seus rendimentos e património.",
+    date: "2026-06-02",
+    category: "Fiscalidade Internacional PT–NO",
+    author: "Dra. Paola Leite Eikeset",
+    keywords:
+      "planeamento fiscal Portugal Noruega, Convenção dupla tributação Portugal Noruega, residência fiscal Portugal Noruega, fiscalidade internacional PT NO",
+    content: [
+      {
+        heading: "Introdução",
+        text:
+          "Para profissionais portugueses estabelecidos na Noruega ou investidores noruegueses com interesses em Portugal, a gestão da carga tributária é uma prioridade estratégica.",
+      },
+      {
+        heading: "A Convenção para Evitar a Dupla Tributação",
+        text:
+          "A Convenção celebrada entre Portugal e Noruega visa coordenar as competências tributárias dos dois Estados e evitar que o contribuinte seja penalizado fiscalmente por operar em múltiplas jurisdições.",
+      },
+      {
+        heading: "Conclusão",
+        text:
+          "Um adequado planeamento fiscal internacional permite reduzir riscos fiscais, proteger rendimentos e assegurar conformidade legal em Portugal e na Noruega.",
+      },
+    ],
+  },
+  {
+    slug: "comprei-imovel-portugal-vivo-noruega",
+    title: "Comprei imóvel em Portugal, mas vivo na Noruega: quais são as consequências fiscais?",
+    description:
+      "A compra de um imóvel em Portugal por residentes fiscais na Noruega pode gerar implicações relacionadas com IMI, AIMI, rendimentos prediais, mais-valias e residência fiscal.",
+    date: "2026-06-05",
+    category: "Fiscalidade Internacional PT–NO",
+    author: "Dra. Paola Leite Eikeset",
+    keywords:
+      "imóvel em Portugal residente na Noruega, residência fiscal Portugal Noruega, IMI emigrantes Noruega",
+    content: [
+      {
+        heading: "Introdução",
+        text:
+          "A aquisição de um imóvel em Portugal por residentes fiscais na Noruega é cada vez mais frequente e pode gerar obrigações fiscais relevantes.",
+      },
+      {
+        heading: "Residência Fiscal",
+        text:
+          "A compra de um imóvel em Portugal não altera automaticamente a residência fiscal do proprietário, mas pode ser analisada pela Autoridade Tributária em caso de dúvida.",
+      },
+      {
+        heading: "IMI e AIMI",
+        text:
+          "Os proprietários ficam sujeitos às regras portuguesas relativas ao IMI e, em determinadas situações, ao AIMI.",
+      },
+      {
+        heading: "Conclusão",
+        text:
+          "A compra de imóvel em Portugal é compatível com a residência fiscal na Noruega, mas exige atenção às obrigações fiscais portuguesas e norueguesas.",
+      },
+    ],
+  },
+  {
+    slug: "como-evitar-dupla-tributacao-portugal-noruega",
+    title: "Como evitar a dupla tributação entre Portugal e Noruega",
+    description:
+      "Conheça as regras da Convenção para Evitar a Dupla Tributação entre Portugal e Noruega e saiba como proteger os seus rendimentos.",
+    date: "2026-06-13",
+    category: "Fiscalidade Internacional PT–NO",
+    author: "Dra. Paola Leite Eikeset",
+    keywords:
+      "dupla tributação Portugal Noruega, convenção Portugal Noruega, residência fiscal Noruega, impostos Portugal Noruega",
+    content: [
+      {
+        heading: "Introdução",
+        text:
+          "Muitos contribuintes possuem rendimentos, património ou interesses económicos em Portugal e na Noruega. Surge então uma questão essencial: será necessário pagar imposto duas vezes sobre o mesmo rendimento?",
+      },
+      {
+        heading: "O que é a dupla tributação?",
+        text:
+          "A dupla tributação ocorre quando dois países pretendem tributar o mesmo contribuinte relativamente ao mesmo rendimento e ao mesmo período temporal.",
+      },
+      {
+        heading: "A Convenção Portugal–Noruega",
+        text:
+          "Portugal e Noruega celebraram uma Convenção para Evitar a Dupla Tributação destinada a definir qual o Estado com prioridade tributária e a eliminar situações de tributação excessiva.",
+      },
+      {
+        heading: "A importância da residência fiscal",
+        text:
+          "A correta determinação da residência fiscal constitui o primeiro passo para aplicar a Convenção e evitar conflitos entre as autoridades fiscais dos dois países.",
+      },
+      {
+        heading: "Conclusão",
+        text:
+          "A Convenção para Evitar a Dupla Tributação entre Portugal e Noruega é um instrumento essencial para trabalhadores, empresários, investidores e pensionistas com ligações aos dois países.",
+      },
+    ],
+  },
 ];
-
-function runSelfTests() {
+  function runSelfTests() {
   const languages = ["pt", "en"];
   const tests = [
     ["both languages exist", Boolean(content.pt && content.en)],
