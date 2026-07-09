@@ -8,15 +8,6 @@ const content = {
     heroTitle: "Advocacia especializada em Portugal e Noruega",
     heroText: "Advocacia Internacional • Fiscalidade Nórdica • Traduções Certificadas",
     heroPrimary: "Agendar consulta",
-    approachLabel: "A minha abordagem",
-    approachTitle: "Confiança e Estratégia como Alicerce",
-    approachParagraphs: [
-      "Cada processo representa uma decisão importante. Por isso, acredito que o acompanhamento jurídico deve ir além da mera aplicação da lei. Deve começar por compreender a realidade de cada cliente, assentar numa estratégia cuidadosamente delineada e desenvolver-se através de uma comunicação clara, transparente e permanente.",
-      "A minha prática é dedicada ao acompanhamento de particulares, trabalhadores, empresários e empresas que vivem, trabalham, investem ou desenvolvem a sua atividade entre Portugal e os países nórdicos.",
-      "Presto apoio jurídico personalizado nas áreas do Direito do Trabalho, Fiscalidade Internacional, Direito Civil e Traduções Certificadas, sempre com uma abordagem adaptada às circunstâncias concretas de cada cliente.",
-      "Mais do que resolver questões jurídicas, procuro construir relações de confiança duradouras, assentes no rigor técnico, na proximidade e num compromisso genuíno com os interesses de quem me confia os seus assuntos mais importantes."
-    ],
-    approachLink: "Conheça a minha abordagem →",
     servicesLabel: "Serviços",
     servicesTitle: "Precisão jurídica. Presença internacional. Identidade nórdica.",
     services: [
@@ -84,15 +75,6 @@ const content = {
     heroTitle: "Legal practice specialised in Portugal and Norway",
     heroText: "International Law • Nordic Taxation • Certified Translations",
     heroPrimary: "Book consultation",
-    approachLabel: "My approach",
-    approachTitle: "Trust and Strategy as a Foundation",
-    approachParagraphs: [
-      "Every case represents an important decision. For this reason, I believe legal support must go beyond the mere application of the law. It must begin with a deep understanding of each client’s reality, rest on a carefully defined strategy and develop through clear, transparent and continuous communication.",
-      "My practice is dedicated to assisting individuals, workers, entrepreneurs and companies who live, work, invest or develop their activity between Portugal and the Nordic countries.",
-      "I provide personalised legal support in Employment Law, International Taxation, Civil Law and Certified Translations, always with an approach adapted to the specific circumstances of each client.",
-      "More than resolving legal issues, I seek to build lasting relationships of trust, grounded in technical precision, proximity and a genuine commitment to the interests of those who entrust me with their most important matters."
-    ],
-    approachLink: "Discover my approach →",
     servicesLabel: "Services",
     servicesTitle: "Legal precision. International presence. Nordic identity.",
     services: [
@@ -274,6 +256,74 @@ const blogArticles = [
       },
     ],
   },
+  {
+    slug: "como-evitar-dupla-tributacao-portugal-noruega",
+    title: "Como evitar a dupla tributação entre Portugal e Noruega",
+    description:
+      "Conheça as regras da Convenção para Evitar a Dupla Tributação entre Portugal e Noruega e saiba como proteger os seus rendimentos.",
+    date: "2026-06-13",
+    category: "Fiscalidade Internacional PT–NO",
+    author: "Dra. Paola Leite Eikeset",
+    keywords:
+      "dupla tributação Portugal Noruega, convenção Portugal Noruega, residência fiscal Noruega, impostos Portugal Noruega",
+    content: [
+      {
+        heading: "Introdução",
+        text:
+          "Cada vez mais portugueses trabalham na Noruega, mantêm património em Portugal ou recebem rendimentos provenientes dos dois países. Da mesma forma, muitos cidadãos noruegueses possuem imóveis, investimentos ou interesses económicos em território português. Perante esta realidade, surge uma preocupação frequente: será necessário pagar imposto duas vezes sobre o mesmo rendimento?",
+      },
+      {
+        heading: "O que é a dupla tributação internacional?",
+        text:
+          "A dupla tributação ocorre quando dois países pretendem tributar o mesmo contribuinte relativamente ao mesmo rendimento e ao mesmo período temporal. Isto pode acontecer, por exemplo, quando uma pessoa é residente fiscal na Noruega, mas recebe rendimentos prediais, pensões, dividendos ou mais-valias em Portugal.",
+      },
+      {
+        heading: "A Convenção entre Portugal e Noruega",
+        text:
+          "Portugal e Noruega celebraram uma Convenção para Evitar a Dupla Tributação destinada a coordenar as competências tributárias dos dois Estados. A Convenção define qual o país com prioridade para tributar determinados rendimentos e estabelece mecanismos para evitar que o contribuinte suporte uma carga fiscal duplicada.",
+      },
+      {
+        heading: "O primeiro passo: determinar a residência fiscal",
+        text:
+          "Antes de analisar qualquer rendimento, é essencial identificar corretamente a residência fiscal do contribuinte. Muitas pessoas acreditam que trabalhar num país significa automaticamente ser residente fiscal nesse Estado, mas a análise pode envolver outros fatores, como habitação permanente, centro dos interesses vitais, localização da família, atividade profissional e ligações económicas.",
+      },
+      {
+        heading: "Rendimentos do trabalho",
+        text:
+          "Em regra, os rendimentos do trabalho dependente são tributados no país onde a atividade é exercida. Assim, um trabalhador que presta atividade na Noruega será normalmente tributado naquele país relativamente ao salário recebido, sem prejuízo de eventuais obrigações declarativas em Portugal, caso mantenha residência fiscal portuguesa ou outros rendimentos sujeitos a tributação.",
+      },
+      {
+        heading: "Imóveis situados em Portugal",
+        text:
+          "Os rendimentos provenientes de imóveis localizados em Portugal são geralmente tributados em Portugal. Isto inclui rendas e mais-valias imobiliárias. Contudo, esses rendimentos podem ter de ser declarados na Noruega se o proprietário for residente fiscal norueguês, aplicando-se então os mecanismos previstos na Convenção para evitar a dupla tributação.",
+      },
+      {
+        heading: "Pensões e outros rendimentos internacionais",
+        text:
+          "As pensões internacionais, dividendos, juros e outros rendimentos transfronteiriços exigem uma análise particularmente cuidadosa, porque diferentes categorias de rendimento podem estar sujeitas a regras distintas. A solução aplicável depende sempre da natureza do rendimento e da situação concreta do contribuinte.",
+      },
+      {
+        heading: "Como é eliminada a dupla tributação?",
+        text:
+          "A dupla tributação pode ser eliminada através de mecanismos como o crédito de imposto, em que o imposto pago num país é considerado no outro dentro dos limites legais aplicáveis, ou através de métodos de isenção previstos na legislação interna e na Convenção.",
+      },
+      {
+        heading: "Erros frequentes",
+        text:
+          "Entre os erros mais comuns encontram-se assumir que apenas é necessário declarar rendimentos num dos países, não comunicar alterações de residência fiscal, omitir património ou rendimentos estrangeiros, vender imóveis sem planeamento prévio e presumir que a tributação num país elimina automaticamente todas as obrigações no outro.",
+      },
+      {
+        heading: "Quando procurar aconselhamento jurídico e fiscal?",
+        text:
+          "É recomendável procurar aconselhamento especializado quando trabalha na Noruega e possui rendimentos em Portugal, tem imóveis em Portugal, recebe pensões internacionais, pretende vender património imobiliário, recebeu notificações da Autoridade Tributária portuguesa ou do Skatteetaten, ou existe dúvida sobre a sua residência fiscal.",
+      },
+      {
+        heading: "Conclusão",
+        text:
+          "A Convenção para Evitar a Dupla Tributação entre Portugal e Noruega é uma ferramenta essencial para trabalhadores, empresários, investidores, pensionistas e famílias com ligações aos dois países. Um adequado planeamento fiscal internacional permite evitar erros, reduzir riscos de litígios com as autoridades fiscais e assegurar o correto cumprimento das obrigações tributárias em Portugal e na Noruega.",
+      },
+    ],
+  },
 ];
 
 function runSelfTests() {
@@ -345,103 +395,6 @@ function BrandHeader() {
         <div><span /> <strong>ADVOCACIA</strong> <span /></div>
       </div>
     </a>
-  );
-}
-
-
-
-function ApproachStyles() {
-  return (
-    <style>{`
-      .approach-section {
-        background: #ffffff;
-        border-top: 1px solid rgba(15, 39, 71, 0.06);
-        border-bottom: 1px solid rgba(15, 39, 71, 0.06);
-      }
-
-      .approach-grid {
-        display: grid;
-        grid-template-columns: minmax(280px, 0.92fr) minmax(320px, 1.08fr);
-        gap: clamp(34px, 6vw, 86px);
-        align-items: center;
-      }
-
-      .approach-photo {
-        width: 100%;
-        max-height: 620px;
-        object-fit: cover;
-        object-position: center top;
-        border-radius: 26px;
-        box-shadow: 0 24px 64px rgba(15, 39, 71, 0.12);
-        border: 1px solid rgba(191, 161, 94, 0.24);
-      }
-
-      .approach-copy h2 {
-        margin-bottom: 24px;
-      }
-
-      .approach-copy p {
-        margin-bottom: 16px;
-      }
-
-      .approach-link {
-        display: inline-flex;
-        margin-top: 18px;
-        color: #0f2747;
-        font-weight: 800;
-        text-decoration: none;
-        letter-spacing: -0.01em;
-        border-bottom: 1px solid rgba(191, 161, 94, 0.7);
-        padding-bottom: 5px;
-      }
-
-      .approach-link:hover {
-        color: #b88a3d;
-      }
-
-      @media (max-width: 900px) {
-        .approach-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .approach-photo {
-          max-height: none;
-        }
-      }
-    `}</style>
-  );
-}
-
-function ApproachSection({ t }) {
-  return (
-    <section id="abordagem" className="section approach-section">
-      <div className="container approach-grid">
-        <motion.img
-          src="/paola-confianca.png"
-          alt="Paola Leite Eikeset"
-          className="approach-photo"
-          initial={{ opacity: 0, y: 22 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.65 }}
-        />
-
-        <motion.div
-          className="approach-copy"
-          initial={{ opacity: 0, y: 22 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.65, delay: 0.08 }}
-        >
-          <SectionLabel>{t.approachLabel}</SectionLabel>
-          <h2>{t.approachTitle}</h2>
-          {t.approachParagraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-          <a href="#contacto" className="approach-link">{t.approachLink}</a>
-        </motion.div>
-      </div>
-    </section>
   );
 }
 
@@ -569,7 +522,6 @@ function BlogArticlePage() {
 
   return (
     <div className="site">
-      <ApproachStyles />
       <header className="header">
         <div className="header-inner">
           <BrandHeader />
@@ -718,7 +670,6 @@ export default function App() {
 
   return (
     <div className="site">
-      <ApproachStyles />
       <header className="header">
         <div className="header-inner">
           <BrandHeader />
@@ -844,8 +795,6 @@ export default function App() {
             </div>
           </div>
         </section>
-
-        <ApproachSection t={t} />
 
         <BlogList />
 
