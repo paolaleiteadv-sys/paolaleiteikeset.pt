@@ -1,4 +1,3 @@
-
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -6,10 +5,18 @@ const content = {
   pt: {
     nav: ["Início", "Serviços", "Portugal–Noruega", "Direito Laboral", "Direito Português", "Traduções", "Artigos", "Contacto"],
     headerButton: "Agendar consulta",
-    heroTitle: "Advocacia Internacional. Fiscalidade. Traduções Certificadas.",
-    heroText: "Soluções jurídicas entre Portugal e os países nórdicos, com estratégia, rigor e acompanhamento personalizado.",
+    heroTitle: "Advocacia especializada em Portugal e Noruega",
+    heroText: "Advocacia Internacional • Fiscalidade Nórdica • Traduções Certificadas",
     heroPrimary: "Agendar consulta",
-    heroSecondary: "Conheça a minha abordagem",
+    approachLabel: "A minha abordagem",
+    approachTitle: "Confiança e Estratégia como Alicerce",
+    approachParagraphs: [
+      "Cada processo representa uma decisão importante. Por isso, acredito que o acompanhamento jurídico deve ir além da mera aplicação da lei. Deve começar por compreender a realidade de cada cliente, assentar numa estratégia cuidadosamente delineada e desenvolver-se através de uma comunicação clara, transparente e permanente.",
+      "A minha prática é dedicada ao acompanhamento de particulares, trabalhadores, empresários e empresas que vivem, trabalham, investem ou desenvolvem a sua atividade entre Portugal e os países nórdicos.",
+      "Presto apoio jurídico personalizado nas áreas do Direito do Trabalho, Fiscalidade Internacional, Direito Civil e Traduções Certificadas, sempre com uma abordagem adaptada às circunstâncias concretas de cada cliente.",
+      "Mais do que resolver questões jurídicas, procuro construir relações de confiança duradouras, assentes no rigor técnico, na proximidade e num compromisso genuíno com os interesses de quem me confia os seus assuntos mais importantes."
+    ],
+    approachLink: "Conheça a minha abordagem →",
     servicesLabel: "Serviços",
     servicesTitle: "Precisão jurídica. Presença internacional. Identidade nórdica.",
     services: [
@@ -25,29 +32,6 @@ const content = {
       { icon: "◷", title: "Resposta rápida", text: "Análise célere do seu caso e orientação eficaz." },
       { icon: "▤", title: "Resultados", text: "Compromisso com soluções jurídicas eficazes." },
     ],
-
-    aboutLabel: "Uma Advocacia sem Fronteiras",
-    aboutTitle: "Muito mais do que um processo.",
-    aboutLead: "Cada decisão jurídica representa uma escolha com impacto na vida de alguém.",
-    aboutParagraphs: [
-      "Foi essa convicção que me levou a construir uma prática jurídica orientada pela estratégia, pelo rigor técnico e pela proximidade com cada cliente.",
-      "Ao longo do meu percurso, compreendi que os processos internacionais exigem muito mais do que um conhecimento aprofundado da lei. Exigem capacidade para interpretar diferentes sistemas jurídicos, compreender realidades culturais distintas e transformar essa complexidade em soluções claras, eficazes e seguras.",
-      "É precisamente nessa interseção entre Portugal e os países nórdicos que desenvolvi a minha atividade, acompanhando trabalhadores, empresários, investidores e famílias que necessitam de apoio jurídico e fiscal além-fronteiras.",
-      "Presto igualmente serviços de traduções certificadas para efeitos legais e administrativos, assegurando segurança documental perante entidades públicas e privadas.",
-      "Acredito que a verdadeira advocacia não começa quando surge um problema. Começa muito antes, através da prevenção, da estratégia e da antecipação dos riscos.",
-      "Mais do que representar clientes, represento os seus interesses, os seus projetos e, muitas vezes, momentos decisivos das suas vidas."
-    ],
-    aboutQuote: "Quando diferentes países, sistemas jurídicos e culturas se cruzam, cada decisão exige mais do que conhecimento jurídico. Exige estratégia.",
-    methodLabel: "A minha forma de trabalhar",
-    methodItems: [
-      { title: "Estratégia antes da ação", text: "Cada decisão começa com uma análise cuidada, identificação de riscos e uma visão de longo prazo." },
-      { title: "Rigor técnico", text: "O detalhe faz frequentemente a diferença entre uma solução aceitável e a melhor solução possível." },
-      { title: "Comunicação clara", text: "Compreender o processo é tão importante quanto encontrar a melhor solução." },
-      { title: "Compromisso", text: "Cada cliente merece acompanhamento próximo, confidencialidade e dedicação." },
-    ],
-    finalCtaTitle: "Vamos encontrar a melhor estratégia para o seu caso.",
-    finalCtaText: "Cada situação exige uma análise própria. Se procura acompanhamento jurídico internacional, terei todo o gosto em analisar o seu pedido.",
-    finalCtaButton: "Entrar em contacto",
     ptNoLabel: "Portugal–Noruega",
     ptNoTitle: "Quando dois sistemas jurídicos se cruzam, os detalhes decidem o resultado.",
     ptNoText: "O acompanhamento certo evita atrasos, indeferimentos, bloqueios bancários, perda de direitos sociais, problemas fiscais e documentos recusados por autoridades estrangeiras.",
@@ -97,10 +81,18 @@ const content = {
   en: {
     nav: ["Home", "Services", "Portugal–Norway", "Employment Law", "Portuguese Law", "Translations", "Articles", "Contact"],
     headerButton: "Book consultation",
-    heroTitle: "International Law. Taxation. Certified Translations.",
-    heroText: "Legal solutions between Portugal and the Nordic countries, with strategy, precision and personalised support.",
+    heroTitle: "Legal practice specialised in Portugal and Norway",
+    heroText: "International Law • Nordic Taxation • Certified Translations",
     heroPrimary: "Book consultation",
-    heroSecondary: "Discover my approach",
+    approachLabel: "My approach",
+    approachTitle: "Trust and Strategy as a Foundation",
+    approachParagraphs: [
+      "Every case represents an important decision. For this reason, I believe legal support must go beyond the mere application of the law. It must begin with a deep understanding of each client’s reality, rest on a carefully defined strategy and develop through clear, transparent and continuous communication.",
+      "My practice is dedicated to assisting individuals, workers, entrepreneurs and companies who live, work, invest or develop their activity between Portugal and the Nordic countries.",
+      "I provide personalised legal support in Employment Law, International Taxation, Civil Law and Certified Translations, always with an approach adapted to the specific circumstances of each client.",
+      "More than resolving legal issues, I seek to build lasting relationships of trust, grounded in technical precision, proximity and a genuine commitment to the interests of those who entrust me with their most important matters."
+    ],
+    approachLink: "Discover my approach →",
     servicesLabel: "Services",
     servicesTitle: "Legal precision. International presence. Nordic identity.",
     services: [
@@ -116,29 +108,6 @@ const content = {
       { icon: "◷", title: "Fast response", text: "Prompt case review and effective guidance." },
       { icon: "▤", title: "Results", text: "Committed to effective legal solutions." },
     ],
-
-    aboutLabel: "Legal Practice Without Borders",
-    aboutTitle: "Much more than a case.",
-    aboutLead: "Every legal decision represents a choice with an impact on someone’s life.",
-    aboutParagraphs: [
-      "This conviction led me to build a legal practice guided by strategy, technical precision and close support for each client.",
-      "Throughout my career, I have understood that international matters require far more than legal knowledge. They require the ability to interpret different legal systems, understand distinct cultural realities and transform complexity into clear, effective and secure solutions.",
-      "It is precisely at this intersection between Portugal and the Nordic countries that I have developed my work, assisting workers, entrepreneurs, investors and families who need cross-border legal and tax support.",
-      "I also provide certified translations for legal and administrative purposes, ensuring documentary security before public and private entities.",
-      "I believe true legal support does not begin only when a problem arises. It begins earlier, through prevention, strategy and risk anticipation.",
-      "More than representing clients, I represent their interests, their projects and, often, decisive moments in their lives."
-    ],
-    aboutQuote: "When different countries, legal systems and cultures intersect, every decision requires more than legal knowledge. It requires strategy.",
-    methodLabel: "My way of working",
-    methodItems: [
-      { title: "Strategy before action", text: "Every decision starts with careful analysis, risk identification and a long-term view." },
-      { title: "Technical precision", text: "Detail often makes the difference between an acceptable solution and the best possible solution." },
-      { title: "Clear communication", text: "Understanding the process is as important as finding the right solution." },
-      { title: "Commitment", text: "Each client deserves close support, confidentiality and dedication." },
-    ],
-    finalCtaTitle: "Let us find the best strategy for your case.",
-    finalCtaText: "Each situation requires its own assessment. If you need international legal support, I will be pleased to review your request.",
-    finalCtaButton: "Get in touch",
     ptNoLabel: "Portugal–Norway",
     ptNoTitle: "When two legal systems intersect, details decide the outcome.",
     ptNoText: "Proper support helps prevent delays, refusals, bank restrictions, loss of social rights, tax problems and documents being rejected by foreign authorities.",
@@ -305,74 +274,6 @@ const blogArticles = [
       },
     ],
   },
-  {
-    slug: "como-evitar-dupla-tributacao-portugal-noruega",
-    title: "Como evitar a dupla tributação entre Portugal e Noruega",
-    description:
-      "Conheça as regras da Convenção para Evitar a Dupla Tributação entre Portugal e Noruega e saiba como proteger os seus rendimentos.",
-    date: "2026-06-13",
-    category: "Fiscalidade Internacional PT–NO",
-    author: "Dra. Paola Leite Eikeset",
-    keywords:
-      "dupla tributação Portugal Noruega, convenção Portugal Noruega, residência fiscal Noruega, impostos Portugal Noruega",
-    content: [
-      {
-        heading: "Introdução",
-        text:
-          "Cada vez mais portugueses trabalham na Noruega, mantêm património em Portugal ou recebem rendimentos provenientes dos dois países. Da mesma forma, muitos cidadãos noruegueses possuem imóveis, investimentos ou interesses económicos em território português. Perante esta realidade, surge uma preocupação frequente: será necessário pagar imposto duas vezes sobre o mesmo rendimento?",
-      },
-      {
-        heading: "O que é a dupla tributação internacional?",
-        text:
-          "A dupla tributação ocorre quando dois países pretendem tributar o mesmo contribuinte relativamente ao mesmo rendimento e ao mesmo período temporal. Isto pode acontecer, por exemplo, quando uma pessoa é residente fiscal na Noruega, mas recebe rendimentos prediais, pensões, dividendos ou mais-valias em Portugal.",
-      },
-      {
-        heading: "A Convenção entre Portugal e Noruega",
-        text:
-          "Portugal e Noruega celebraram uma Convenção para Evitar a Dupla Tributação destinada a coordenar as competências tributárias dos dois Estados. A Convenção define qual o país com prioridade para tributar determinados rendimentos e estabelece mecanismos para evitar que o contribuinte suporte uma carga fiscal duplicada.",
-      },
-      {
-        heading: "O primeiro passo: determinar a residência fiscal",
-        text:
-          "Antes de analisar qualquer rendimento, é essencial identificar corretamente a residência fiscal do contribuinte. Muitas pessoas acreditam que trabalhar num país significa automaticamente ser residente fiscal nesse Estado, mas a análise pode envolver outros fatores, como habitação permanente, centro dos interesses vitais, localização da família, atividade profissional e ligações económicas.",
-      },
-      {
-        heading: "Rendimentos do trabalho",
-        text:
-          "Em regra, os rendimentos do trabalho dependente são tributados no país onde a atividade é exercida. Assim, um trabalhador que presta atividade na Noruega será normalmente tributado naquele país relativamente ao salário recebido, sem prejuízo de eventuais obrigações declarativas em Portugal, caso mantenha residência fiscal portuguesa ou outros rendimentos sujeitos a tributação.",
-      },
-      {
-        heading: "Imóveis situados em Portugal",
-        text:
-          "Os rendimentos provenientes de imóveis localizados em Portugal são geralmente tributados em Portugal. Isto inclui rendas e mais-valias imobiliárias. Contudo, esses rendimentos podem ter de ser declarados na Noruega se o proprietário for residente fiscal norueguês, aplicando-se então os mecanismos previstos na Convenção para evitar a dupla tributação.",
-      },
-      {
-        heading: "Pensões e outros rendimentos internacionais",
-        text:
-          "As pensões internacionais, dividendos, juros e outros rendimentos transfronteiriços exigem uma análise particularmente cuidadosa, porque diferentes categorias de rendimento podem estar sujeitas a regras distintas. A solução aplicável depende sempre da natureza do rendimento e da situação concreta do contribuinte.",
-      },
-      {
-        heading: "Como é eliminada a dupla tributação?",
-        text:
-          "A dupla tributação pode ser eliminada através de mecanismos como o crédito de imposto, em que o imposto pago num país é considerado no outro dentro dos limites legais aplicáveis, ou através de métodos de isenção previstos na legislação interna e na Convenção.",
-      },
-      {
-        heading: "Erros frequentes",
-        text:
-          "Entre os erros mais comuns encontram-se assumir que apenas é necessário declarar rendimentos num dos países, não comunicar alterações de residência fiscal, omitir património ou rendimentos estrangeiros, vender imóveis sem planeamento prévio e presumir que a tributação num país elimina automaticamente todas as obrigações no outro.",
-      },
-      {
-        heading: "Quando procurar aconselhamento jurídico e fiscal?",
-        text:
-          "É recomendável procurar aconselhamento especializado quando trabalha na Noruega e possui rendimentos em Portugal, tem imóveis em Portugal, recebe pensões internacionais, pretende vender património imobiliário, recebeu notificações da Autoridade Tributária portuguesa ou do Skatteetaten, ou existe dúvida sobre a sua residência fiscal.",
-      },
-      {
-        heading: "Conclusão",
-        text:
-          "A Convenção para Evitar a Dupla Tributação entre Portugal e Noruega é uma ferramenta essencial para trabalhadores, empresários, investidores, pensionistas e famílias com ligações aos dois países. Um adequado planeamento fiscal internacional permite evitar erros, reduzir riscos de litígios com as autoridades fiscais e assegurar o correto cumprimento das obrigações tributárias em Portugal e na Noruega.",
-      },
-    ],
-  },
 ];
 
 function runSelfTests() {
@@ -449,263 +350,113 @@ function BrandHeader() {
 
 
 
-function WebsiteVisualStyles() {
+function ApproachStyles() {
   return (
     <style>{`
-      html { scroll-behavior: smooth; }
-      .section { padding-top: clamp(92px, 9vw, 140px); padding-bottom: clamp(92px, 9vw, 140px); }
-      .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding-top: 96px; }
-      .hero-inner {
-        gap: clamp(38px, 6vw, 96px);
-        display: grid;
-        grid-template-columns: minmax(300px, 0.92fr) minmax(360px, 1.08fr);
-        align-items: center;
-        max-width: 1240px;
-      }
-      .hero-inner h1 {
-        font-size: clamp(2.65rem, 5vw, 5.25rem);
-        letter-spacing: -0.06em;
-        line-height: .92;
-      }
-      .hero-title {
-        font-size: clamp(1.55rem, 2.2vw, 2.45rem);
-        max-width: 780px;
-        line-height: 1.15;
-      }
-      .hero-text {
-        max-width: 680px;
-        font-size: clamp(1rem, 1.25vw, 1.18rem);
-        line-height: 1.75;
-      }
-      .hero-portrait {
-        width: min(520px, 43vw);
-        height: clamp(560px, 72vh, 780px);
-        object-fit: cover;
-        object-position: center top;
-        border-radius: 32px;
-        box-shadow: 0 32px 86px rgba(15, 39, 71, 0.2);
-        border: 1px solid rgba(191, 161, 94, 0.3);
-      }
-      .hero-actions-inline {
-        display: flex;
-        gap: 14px;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 28px;
-      }
-      .editorial-section { background: #ffffff; }
-      .editorial-split {
-        display: grid;
-        grid-template-columns: minmax(280px, 0.85fr) minmax(320px, 1.15fr);
-        gap: clamp(34px, 6vw, 86px);
-        align-items: center;
-      }
-      .editorial-image-wrap { position: relative; }
-      .editorial-image-wrap::before {
-        content: "";
-        position: absolute;
-        inset: 18px -18px -18px 18px;
-        border: 1px solid rgba(191, 161, 94, 0.42);
-        border-radius: 28px;
-        z-index: 0;
-      }
-      .editorial-image {
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        min-height: 520px;
-        max-height: 680px;
-        object-fit: cover;
-        object-position: center top;
-        border-radius: 28px;
-        box-shadow: 0 24px 64px rgba(15, 39, 71, 0.13);
-      }
-      .editorial-copy h2 { margin-bottom: 18px; }
-      .editorial-kicker {
-        font-size: 1.3rem;
-        line-height: 1.55;
-        color: #0f2747;
-        font-weight: 650;
-        margin-bottom: 22px;
-      }
-      .editorial-copy p { margin-bottom: 16px; }
-      .signature-line {
-        margin-top: 28px;
-        padding-top: 22px;
-        border-top: 1px solid rgba(191, 161, 94, 0.42);
-        color: #0f2747;
-        font-weight: 700;
-      }
-      .method-section { background: #ffffff; }
-      .method-layout {
-        display: grid;
-        grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
-        gap: clamp(28px, 5vw, 70px);
-        align-items: center;
-      }
-      .method-photo {
-        width: 100%;
-        min-height: 430px;
-        object-fit: cover;
-        border-radius: 26px;
-        box-shadow: 0 22px 54px rgba(15, 39, 71, 0.12);
-      }
-      .method-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 18px;
-      }
-      .method-card {
-        padding: clamp(28px, 3vw, 38px);
-        border: 1px solid rgba(15, 39, 71, 0.08);
-        border-top: 3px solid rgba(191, 161, 94, 0.75);
-        border-radius: 20px;
-        background: #fff;
-        transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-      }
-      .method-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 18px 38px rgba(15, 39, 71, 0.1);
-        border-color: rgba(191, 161, 94, 0.32);
-      }
-      .method-card h3 { color: #0f2747; margin-bottom: 10px; }
-      .quote-band {
+      .approach-section {
         background: #ffffff;
-        padding: clamp(70px, 9vw, 115px) 0;
         border-top: 1px solid rgba(15, 39, 71, 0.06);
         border-bottom: 1px solid rgba(15, 39, 71, 0.06);
       }
-      .quote-band blockquote {
-        max-width: 980px;
-        margin: 0 auto;
-        text-align: center;
-        font-size: clamp(1.7rem, 3.2vw, 3rem);
-        line-height: 1.25;
-        color: #0f2747;
-        font-weight: 650;
-        letter-spacing: -0.04em;
-      }
-      .final-cta {
+
+      .approach-grid {
         display: grid;
-        grid-template-columns: minmax(280px, .8fr) minmax(320px, 1.2fr);
-        gap: clamp(30px, 5vw, 72px);
+        grid-template-columns: minmax(280px, 0.92fr) minmax(320px, 1.08fr);
+        gap: clamp(34px, 6vw, 86px);
         align-items: center;
       }
-      .final-cta img {
+
+      .approach-photo {
         width: 100%;
-        max-height: 520px;
+        max-height: 620px;
         object-fit: cover;
         object-position: center top;
         border-radius: 26px;
-        box-shadow: 0 24px 60px rgba(15, 39, 71, 0.14);
+        box-shadow: 0 24px 64px rgba(15, 39, 71, 0.12);
+        border: 1px solid rgba(191, 161, 94, 0.24);
       }
-      .final-cta-copy h2 { margin-bottom: 16px; }
-      .blog-editorial {
-        display: grid;
-        grid-template-columns: minmax(260px, .85fr) minmax(320px, 1.15fr);
-        gap: clamp(28px, 5vw, 64px);
-        align-items: center;
-        margin-bottom: 52px;
+
+      .approach-copy h2 {
+        margin-bottom: 24px;
       }
-      .blog-editorial img {
-        width: 100%;
-        max-height: 420px;
-        object-fit: cover;
-        object-position: center top;
-        border-radius: 24px;
-        box-shadow: 0 18px 46px rgba(15, 39, 71, .11);
+
+      .approach-copy p {
+        margin-bottom: 16px;
       }
+
+      .approach-link {
+        display: inline-flex;
+        margin-top: 18px;
+        color: #0f2747;
+        font-weight: 800;
+        text-decoration: none;
+        letter-spacing: -0.01em;
+        border-bottom: 1px solid rgba(191, 161, 94, 0.7);
+        padding-bottom: 5px;
+      }
+
+      .approach-link:hover {
+        color: #b88a3d;
+      }
+
       @media (max-width: 900px) {
-        .hero-inner { grid-template-columns: 1fr; text-align: center; }
-        .hero-portrait { width: min(520px, 92vw); margin: 0 auto; }
-        .editorial-split, .method-layout, .final-cta, .blog-editorial { grid-template-columns: 1fr; }
-        .method-grid { grid-template-columns: 1fr; }
-        .editorial-image, .method-photo { min-height: 380px; }
+        .approach-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .approach-photo {
+          max-height: none;
+        }
       }
     `}</style>
   );
 }
 
-function AboutSection({ t }) {
+function ApproachSection({ t }) {
   return (
-    <section id="quem-sou" className="section editorial-section">
-      <div className="container editorial-split">
-        <motion.div className="editorial-image-wrap" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65 }}>
-          <img className="editorial-image" src="/paola-janela.jpg" alt="Paola Leite Eikeset em ambiente profissional" />
-        </motion.div>
-        <motion.div className="editorial-copy" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65, delay: 0.08 }}>
-          <SectionLabel>{t.aboutLabel}</SectionLabel>
-          <h2>{t.aboutTitle}</h2>
-          <p className="editorial-kicker">{t.aboutLead}</p>
-          {t.aboutParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-          <p className="signature-line">Paola Leite Eikeset<br /><span>Advogada | Tradutora Certificada</span></p>
-        </motion.div>
-      </div>
-    </section>
-  );
-}
+    <section id="abordagem" className="section approach-section">
+      <div className="container approach-grid">
+        <motion.img
+          src="/paola-confianca.png"
+          alt="Paola Leite Eikeset"
+          className="approach-photo"
+          initial={{ opacity: 0, y: 22 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.65 }}
+        />
 
-function MethodSection({ t }) {
-  return (
-    <section className="section method-section">
-      <div className="container method-layout">
-        <motion.img className="method-photo" src="/paola-computador.jpg" alt="Paola Leite Eikeset a trabalhar no computador" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65 }} />
-        <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65, delay: 0.08 }}>
-          <SectionLabel>{t.methodLabel}</SectionLabel>
-          <div className="method-grid">
-            {t.methodItems.map((item) => (
-              <div className="method-card" key={item.title}>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </div>
-            ))}
-          </div>
+        <motion.div
+          className="approach-copy"
+          initial={{ opacity: 0, y: 22 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.65, delay: 0.08 }}
+        >
+          <SectionLabel>{t.approachLabel}</SectionLabel>
+          <h2>{t.approachTitle}</h2>
+          {t.approachParagraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+          <a href="#contacto" className="approach-link">{t.approachLink}</a>
         </motion.div>
       </div>
     </section>
   );
 }
 
-function QuoteBand({ text }) {
-  return (
-    <section className="quote-band">
-      <div className="container">
-        <blockquote>“{text}”</blockquote>
-      </div>
-    </section>
-  );
-}
-
-function FinalContactCta({ t, onClick }) {
-  return (
-    <section className="section section-white">
-      <div className="container final-cta">
-        <img src="/paola-riscas.jpg" alt="Paola Leite Eikeset" />
-        <div className="final-cta-copy">
-          <SectionLabel>{t.contactLabel}</SectionLabel>
-          <h2>{t.finalCtaTitle}</h2>
-          <p className="lead">{t.finalCtaText}</p>
-          <Button type="button" onClick={onClick}>{t.finalCtaButton}<ArrowIcon className="arrow" /></Button>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function BlogList() {
   return (
     <section id="artigos" className="section section-white">
       <div className="container">
-        <div className="blog-editorial">
-          <img src="/paola-computador.jpg" alt="Paola Leite Eikeset a preparar artigos jurídicos" />
-          <div className="section-heading" style={{ textAlign: "left", marginBottom: 0 }}>
-            <SectionLabel>Artigos</SectionLabel>
-            <h2>Conhecimento Jurídico Internacional</h2>
-            <p className="lead">
-              Artigos sobre fiscalidade internacional, residência fiscal, trabalho na Noruega,
-              heranças internacionais e questões jurídicas entre Portugal e Noruega.
-            </p>
-          </div>
+        <div className="section-heading">
+          <SectionLabel>Artigos</SectionLabel>
+          <h2>Conhecimento Jurídico Internacional</h2>
+          <p className="lead">
+            Artigos sobre fiscalidade internacional, residência fiscal, trabalho na Noruega,
+            heranças internacionais e questões jurídicas entre Portugal e Noruega.
+          </p>
         </div>
 
         <div className="grid-three">
@@ -818,7 +569,7 @@ function BlogArticlePage() {
 
   return (
     <div className="site">
-      <WebsiteVisualStyles />
+      <ApproachStyles />
       <header className="header">
         <div className="header-inner">
           <BrandHeader />
@@ -967,7 +718,7 @@ export default function App() {
 
   return (
     <div className="site">
-      <WebsiteVisualStyles />
+      <ApproachStyles />
       <header className="header">
         <div className="header-inner">
           <BrandHeader />
@@ -983,17 +734,13 @@ export default function App() {
         <section id="inicio" className="hero">
           <div className="hero-bg" />
           <div className="hero-inner">
-            <motion.img src="/paola-hero.jpg" alt="Paola Leite Eikeset" className="hero-portrait" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} />
+            <motion.img src="/logo.jpg" alt="Paola Leite Eikeset Advocacia" className="hero-logo" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} />
             <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }}>
-              <img src="/logo.jpg" alt="Paola Leite Eikeset Advocacia" className="hero-logo" />
               <h1>PAOLA LEITE EIKESET</h1>
               <div className="hero-word"><span /> <p>ADVOCACIA</p> <span /></div>
               <p className="hero-title">{t.heroTitle}</p>
               <p className="hero-text">{t.heroText}</p>
-              <div className="hero-actions-inline">
-                <Button type="button" className="hero-cta" onClick={scrollToContact}>{t.heroPrimary}<ArrowIcon className="arrow" /></Button>
-                <Button type="button" variant="outline" onClick={() => document.getElementById("quem-sou")?.scrollIntoView({ behavior: "smooth" })}>{t.heroSecondary}</Button>
-              </div>
+              <Button type="button" className="hero-cta" onClick={scrollToContact}>{t.heroPrimary}<ArrowIcon className="arrow" /></Button>
             </motion.div>
           </div>
 
@@ -1027,12 +774,6 @@ export default function App() {
             </div>
           </div>
         </section>
-
-        <AboutSection t={t} />
-
-        <MethodSection t={t} />
-
-        <QuoteBand text={t.aboutQuote} />
 
         <section id="portugal-noruega" className="section section-dark">
           <div className="container split">
@@ -1104,9 +845,9 @@ export default function App() {
           </div>
         </section>
 
-        <BlogList />
+        <ApproachSection t={t} />
 
-        <FinalContactCta t={t} onClick={scrollToContact} />
+        <BlogList />
 
         <section id="contacto" className="section">
           <div className="container contact-box">
