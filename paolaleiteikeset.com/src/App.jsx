@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const content = {
   pt: {
-    nav: ["Início", "Serviços", "Portugal–Noruega", "Direito Laboral", "Direito Português", "Traduções", "Artigos", "Contacto"],
+    nav: ["Início", "Serviços", "A Nossa Abordagem", "Portugal–Noruega", "Direito Laboral", "Direito Português", "Traduções", "Artigos", "Contacto"],
     headerButton: "Agendar consulta",
     heroTitle: "Advocacia especializada em Portugal e Noruega",
     heroText: "Advocacia Internacional • Fiscalidade Nórdica • Traduções Certificadas",
@@ -70,7 +70,7 @@ const content = {
     footerText: "Advocacia Internacional · Fiscalidade Nórdica · Responsabilidade Limitada",
   },
   en: {
-    nav: ["Home", "Services", "Portugal–Norway", "Employment Law", "Portuguese Law", "Translations", "Articles", "Contact"],
+    nav: ["Home", "Services", "Our Approach", "Portugal–Norway", "Employment Law", "Portuguese Law", "Translations", "Articles", "Contact"],
     headerButton: "Book consultation",
     heroTitle: "Legal practice specialised in Portugal and Norway",
     heroText: "International Law • Nordic Taxation • Certified Translations",
@@ -256,81 +256,13 @@ const blogArticles = [
       },
     ],
   },
-  {
-    slug: "como-evitar-dupla-tributacao-portugal-noruega",
-    title: "Como evitar a dupla tributação entre Portugal e Noruega",
-    description:
-      "Conheça as regras da Convenção para Evitar a Dupla Tributação entre Portugal e Noruega e saiba como proteger os seus rendimentos.",
-    date: "2026-06-13",
-    category: "Fiscalidade Internacional PT–NO",
-    author: "Dra. Paola Leite Eikeset",
-    keywords:
-      "dupla tributação Portugal Noruega, convenção Portugal Noruega, residência fiscal Noruega, impostos Portugal Noruega",
-    content: [
-      {
-        heading: "Introdução",
-        text:
-          "Cada vez mais portugueses trabalham na Noruega, mantêm património em Portugal ou recebem rendimentos provenientes dos dois países. Da mesma forma, muitos cidadãos noruegueses possuem imóveis, investimentos ou interesses económicos em território português. Perante esta realidade, surge uma preocupação frequente: será necessário pagar imposto duas vezes sobre o mesmo rendimento?",
-      },
-      {
-        heading: "O que é a dupla tributação internacional?",
-        text:
-          "A dupla tributação ocorre quando dois países pretendem tributar o mesmo contribuinte relativamente ao mesmo rendimento e ao mesmo período temporal. Isto pode acontecer, por exemplo, quando uma pessoa é residente fiscal na Noruega, mas recebe rendimentos prediais, pensões, dividendos ou mais-valias em Portugal.",
-      },
-      {
-        heading: "A Convenção entre Portugal e Noruega",
-        text:
-          "Portugal e Noruega celebraram uma Convenção para Evitar a Dupla Tributação destinada a coordenar as competências tributárias dos dois Estados. A Convenção define qual o país com prioridade para tributar determinados rendimentos e estabelece mecanismos para evitar que o contribuinte suporte uma carga fiscal duplicada.",
-      },
-      {
-        heading: "O primeiro passo: determinar a residência fiscal",
-        text:
-          "Antes de analisar qualquer rendimento, é essencial identificar corretamente a residência fiscal do contribuinte. Muitas pessoas acreditam que trabalhar num país significa automaticamente ser residente fiscal nesse Estado, mas a análise pode envolver outros fatores, como habitação permanente, centro dos interesses vitais, localização da família, atividade profissional e ligações económicas.",
-      },
-      {
-        heading: "Rendimentos do trabalho",
-        text:
-          "Em regra, os rendimentos do trabalho dependente são tributados no país onde a atividade é exercida. Assim, um trabalhador que presta atividade na Noruega será normalmente tributado naquele país relativamente ao salário recebido, sem prejuízo de eventuais obrigações declarativas em Portugal, caso mantenha residência fiscal portuguesa ou outros rendimentos sujeitos a tributação.",
-      },
-      {
-        heading: "Imóveis situados em Portugal",
-        text:
-          "Os rendimentos provenientes de imóveis localizados em Portugal são geralmente tributados em Portugal. Isto inclui rendas e mais-valias imobiliárias. Contudo, esses rendimentos podem ter de ser declarados na Noruega se o proprietário for residente fiscal norueguês, aplicando-se então os mecanismos previstos na Convenção para evitar a dupla tributação.",
-      },
-      {
-        heading: "Pensões e outros rendimentos internacionais",
-        text:
-          "As pensões internacionais, dividendos, juros e outros rendimentos transfronteiriços exigem uma análise particularmente cuidadosa, porque diferentes categorias de rendimento podem estar sujeitas a regras distintas. A solução aplicável depende sempre da natureza do rendimento e da situação concreta do contribuinte.",
-      },
-      {
-        heading: "Como é eliminada a dupla tributação?",
-        text:
-          "A dupla tributação pode ser eliminada através de mecanismos como o crédito de imposto, em que o imposto pago num país é considerado no outro dentro dos limites legais aplicáveis, ou através de métodos de isenção previstos na legislação interna e na Convenção.",
-      },
-      {
-        heading: "Erros frequentes",
-        text:
-          "Entre os erros mais comuns encontram-se assumir que apenas é necessário declarar rendimentos num dos países, não comunicar alterações de residência fiscal, omitir património ou rendimentos estrangeiros, vender imóveis sem planeamento prévio e presumir que a tributação num país elimina automaticamente todas as obrigações no outro.",
-      },
-      {
-        heading: "Quando procurar aconselhamento jurídico e fiscal?",
-        text:
-          "É recomendável procurar aconselhamento especializado quando trabalha na Noruega e possui rendimentos em Portugal, tem imóveis em Portugal, recebe pensões internacionais, pretende vender património imobiliário, recebeu notificações da Autoridade Tributária portuguesa ou do Skatteetaten, ou existe dúvida sobre a sua residência fiscal.",
-      },
-      {
-        heading: "Conclusão",
-        text:
-          "A Convenção para Evitar a Dupla Tributação entre Portugal e Noruega é uma ferramenta essencial para trabalhadores, empresários, investidores, pensionistas e famílias com ligações aos dois países. Um adequado planeamento fiscal internacional permite evitar erros, reduzir riscos de litígios com as autoridades fiscais e assegurar o correto cumprimento das obrigações tributárias em Portugal e na Noruega.",
-      },
-    ],
-  },
 ];
 
 function runSelfTests() {
   const languages = ["pt", "en"];
   const tests = [
     ["both languages exist", Boolean(content.pt && content.en)],
-    ["both languages have eight nav labels", languages.every((l) => content[l].nav.length === 8)],
+    ["both languages have nine nav labels", languages.every((l) => content[l].nav.length === 9)],
     ["both languages have four services", languages.every((l) => content[l].services.length === 4)],
     ["both languages have five highlights", languages.every((l) => content[l].highlights.length === 5)],
     ["both languages have eight employment law items", languages.every((l) => content[l].labourItems.length === 8)],
@@ -388,7 +320,7 @@ function LanguageToggle({ lang, setLang }) {
 
 function BrandHeader() {
   return (
-    <a href="#inicio" className="brand-header">
+    <a href="/#inicio" className="brand-header">
       <img src="/logo.jpg" alt="Paola Leite Eikeset Advocacia" />
       <div className="brand-header-text">
         <p>PAOLA LEITE EIKESET</p>
@@ -398,6 +330,275 @@ function BrandHeader() {
   );
 }
 
+
+
+const approachCopy = {
+  pt: {
+    trustLabel: "A Nossa Abordagem",
+    trustTitle: "Confiança e Estratégia como Alicerce",
+    trustParagraphs: [
+      "Cada processo representa uma decisão importante. Por isso, acreditamos que o acompanhamento jurídico deve ir além da mera aplicação da lei. Deve começar por compreender a realidade de cada cliente, assentar numa estratégia cuidadosamente delineada e desenvolver-se através de uma comunicação clara, transparente e permanente.",
+      "A nossa prática é dedicada ao acompanhamento de particulares, trabalhadores, empresários e empresas que vivem, trabalham, investem ou desenvolvem a sua atividade entre Portugal e os países nórdicos.",
+      "Prestamos apoio jurídico personalizado nas áreas do Direito do Trabalho, Fiscalidade Internacional, Direito Civil e Traduções Certificadas, sempre com uma abordagem adaptada às circunstâncias concretas de cada cliente.",
+      "Mais do que resolver questões jurídicas, procuramos construir relações de confiança duradouras, assentes no rigor técnico, na proximidade e num compromisso genuíno com os interesses de quem nos confia os seus assuntos mais importantes."
+    ],
+    trustLink: "Conheça a nossa abordagem →",
+    pageTitle: "A Nossa Abordagem",
+    pageSubtitle: "O Direito não deve criar barreiras entre países. Deve construir pontes entre pessoas, empresas e oportunidades.",
+    pageIntro: "Acompanhamos clientes que desenvolvem a sua vida pessoal ou profissional entre Portugal e os países nórdicos, oferecendo soluções jurídicas rigorosas, personalizadas e orientadas para decisões seguras.",
+    visionTitle: "Uma Visão Internacional",
+    visionText: "Os assuntos jurídicos internacionais exigem mais do que conhecimento técnico. Exigem capacidade para interpretar diferentes sistemas jurídicos, compreender realidades culturais distintas e encontrar soluções eficazes em contextos complexos. É precisamente nessa interseção entre Portugal e os países nórdicos que desenvolvemos a nossa atividade.",
+    prepTitle: "Antes de Cada Decisão Existe Preparação",
+    prepText: "Cada recomendação jurídica resulta de um processo rigoroso de análise, estudo e preparação. Acreditamos que uma estratégia sólida começa muito antes da primeira diligência, através da compreensão do enquadramento jurídico, fiscal e da realidade concreta de cada cliente.",
+    workTitle: "Como Trabalhamos",
+    pillars: [
+      { title: "Estratégia antes da ação", text: "Cada decisão jurídica assenta numa análise cuidada, na identificação de riscos e numa visão de longo prazo." },
+      { title: "Rigor técnico", text: "O detalhe faz frequentemente a diferença entre uma solução aceitável e a melhor solução possível." },
+      { title: "Comunicação clara", text: "Explicamos cada etapa do processo para que os clientes possam decidir com confiança." },
+      { title: "Acompanhamento personalizado", text: "Cada cliente beneficia de uma estratégia ajustada às suas necessidades, objetivos e circunstâncias concretas." },
+    ],
+    soughtTitle: "Quando nos procuram",
+    soughtItems: [
+      "Trabalhadores portugueses nos países nórdicos.",
+      "Empresas com atividade internacional.",
+      "Investidores e proprietários de património transfronteiriço.",
+      "Famílias com questões sucessórias e documentação internacional.",
+      "Clientes que necessitam de traduções certificadas com validade oficial."
+    ],
+    commitmentTitle: "O Nosso Compromisso",
+    commitmentText: "Não acompanhamos apenas processos. Acompanhamos decisões que podem marcar o futuro dos nossos clientes.",
+    finalTitle: "Cada processo merece uma estratégia. Cada cliente merece ser ouvido.",
+    finalText: "Mais do que prestar serviços jurídicos, procuramos construir relações de confiança duradouras, baseadas no rigor, na transparência e numa estratégia preparada para cada realidade.",
+    finalButton: "Agendar Consulta"
+  },
+  en: {
+    trustLabel: "Our Approach",
+    trustTitle: "Trust and Strategy as a Foundation",
+    trustParagraphs: [
+      "Every matter represents an important decision. We believe legal support must go beyond the mere application of the law. It must begin by understanding each client’s reality, rest on a carefully designed strategy and develop through clear, transparent and continuous communication.",
+      "Our practice is dedicated to individuals, workers, entrepreneurs and companies who live, work, invest or operate between Portugal and the Nordic countries.",
+      "We provide personalised legal support in Employment Law, International Taxation, Civil Law and Certified Translations, always with an approach adapted to the client’s specific circumstances.",
+      "More than resolving legal matters, we seek to build lasting relationships of trust, grounded in technical precision, proximity and genuine commitment to the interests entrusted to us."
+    ],
+    trustLink: "Discover our approach →",
+    pageTitle: "Our Approach",
+    pageSubtitle: "Law should not create barriers between countries. It should build bridges between people, companies and opportunities.",
+    pageIntro: "We support clients whose personal or professional lives connect Portugal and the Nordic countries, providing rigorous, tailored legal solutions focused on secure decision-making.",
+    visionTitle: "An International Vision",
+    visionText: "International legal matters require more than technical knowledge. They require the ability to interpret different legal systems, understand distinct cultural realities and find effective solutions in complex contexts. It is precisely at this intersection between Portugal and the Nordic countries that our work is developed.",
+    prepTitle: "Every Decision Begins with Preparation",
+    prepText: "Every legal recommendation is the result of careful analysis, study and preparation. We believe a solid strategy begins long before the first formal step, through a clear understanding of the legal, tax and personal context of each client.",
+    workTitle: "How We Work",
+    pillars: [
+      { title: "Strategy before action", text: "Every legal decision is based on careful analysis, risk identification and a long-term view." },
+      { title: "Technical precision", text: "Detail often makes the difference between an acceptable solution and the best possible outcome." },
+      { title: "Clear communication", text: "We explain each stage of the process so clients can decide with confidence." },
+      { title: "Personalised support", text: "Each client benefits from a strategy tailored to their needs, objectives and specific circumstances." },
+    ],
+    soughtTitle: "When Clients Come to Us",
+    soughtItems: [
+      "Portuguese workers in the Nordic countries.",
+      "Companies with international activity.",
+      "Investors and owners of cross-border assets.",
+      "Families dealing with succession and international documentation.",
+      "Clients requiring certified translations with legal validity."
+    ],
+    commitmentTitle: "Our Commitment",
+    commitmentText: "We do not merely handle cases. We support decisions that may shape our clients’ future.",
+    finalTitle: "Every matter deserves a strategy. Every client deserves to be heard.",
+    finalText: "More than providing legal services, we seek to build lasting relationships of trust, based on precision, transparency and a strategy prepared for each reality.",
+    finalButton: "Book Consultation"
+  }
+};
+
+const approachImages = {
+  trust: "/paola-confianca.jpeg",
+  stripes: "/paola-riscas.jpeg",
+  working: "/paola-computador.jpeg",
+  bordeaux: "/paola-bordeaux.jpeg",
+  window: "/paola-janela.jpeg",
+  book: "/paola-livro.jpeg",
+};
+
+function ApproachStyles() {
+  return (
+    <style>{`
+      .trust-section { background:#fff; border-top:1px solid rgba(15,39,71,.06); border-bottom:1px solid rgba(15,39,71,.06); }
+      .trust-layout { display:grid; grid-template-columns:minmax(280px,.88fr) minmax(320px,1.12fr); gap:clamp(34px,6vw,86px); align-items:center; }
+      .trust-photo { width:100%; border-radius:26px; object-fit:cover; object-position:center top; box-shadow:0 24px 60px rgba(15,39,71,.11); }
+      .trust-copy h2 { margin-bottom:22px; }
+      .trust-copy p { margin-bottom:16px; }
+      .text-link { display:inline-flex; align-items:center; margin-top:12px; color:#0f2747; font-weight:800; text-decoration:none; border-bottom:1px solid rgba(191,161,94,.65); padding-bottom:6px; }
+      .approach-page { background:#fff; color:#0f2747; }
+      .approach-hero { min-height:72vh; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; background:linear-gradient(90deg,#f8f6f2 0%, #fff 55%); }
+      .approach-hero img { width:100%; height:72vh; min-height:560px; object-fit:cover; object-position:center; display:block; }
+      .approach-hero-copy { padding:clamp(48px,7vw,110px); }
+      .approach-kicker { color:#bfa15e; text-transform:uppercase; letter-spacing:.16em; font-size:.74rem; font-weight:800; margin-bottom:22px; }
+      .approach-hero h1, .approach-block h2, .approach-centered h2, .approach-final h2 { color:#0f2747; letter-spacing:-.04em; }
+      .approach-hero h1 { font-size:clamp(2.7rem,5vw,5.5rem); line-height:.98; margin:0 0 30px; }
+      .approach-hero .manifesto { font-size:clamp(1.35rem,2.1vw,2.25rem); line-height:1.25; color:#0f2747; margin-bottom:24px; font-weight:650; }
+      .approach-hero p, .approach-block p, .approach-centered p, .approach-final p { color:#405066; line-height:1.85; font-size:1.03rem; }
+      .approach-block { display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); gap:clamp(34px,6vw,86px); align-items:center; padding:clamp(70px,8vw,120px) max(24px, calc((100vw - 1180px)/2)); }
+      .approach-block.reverse { grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); }
+      .approach-block img { width:100%; border-radius:26px; object-fit:cover; max-height:680px; box-shadow:0 24px 60px rgba(15,39,71,.10); }
+      .approach-block h2 { font-size:clamp(2rem,3.2vw,3.8rem); line-height:1.05; margin:0 0 24px; }
+      .approach-book { padding:clamp(60px,8vw,110px) max(24px, calc((100vw - 1180px)/2)); background:#f8f6f2; }
+      .approach-book img { width:100%; max-height:720px; object-fit:cover; border-radius:26px; display:block; margin-bottom:34px; }
+      .approach-book .caption { max-width:820px; }
+      .approach-work { padding:clamp(70px,8vw,120px) max(24px, calc((100vw - 1180px)/2)); display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); gap:clamp(34px,6vw,86px); align-items:center; }
+      .approach-work img { width:100%; border-radius:26px; object-fit:cover; max-height:680px; box-shadow:0 24px 60px rgba(15,39,71,.10); }
+      .pillar-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:28px; }
+      .pillar-min { border-top:2px solid rgba(191,161,94,.72); padding-top:18px; }
+      .pillar-min h3 { color:#0f2747; margin:0 0 10px; font-size:1.05rem; }
+      .pillar-min p { margin:0; font-size:.96rem; }
+      .approach-centered { padding:clamp(70px,8vw,115px) 24px; text-align:center; }
+      .approach-centered .inner { max-width:960px; margin:0 auto; }
+      .approach-centered h2 { font-size:clamp(2rem,3vw,3.6rem); margin-bottom:28px; }
+      .sought-list { display:grid; grid-template-columns:repeat(5,1fr); gap:0; border-top:1px solid rgba(191,161,94,.45); border-bottom:1px solid rgba(191,161,94,.45); margin-top:38px; text-align:left; }
+      .sought-list div { padding:24px 20px; border-right:1px solid rgba(191,161,94,.45); color:#405066; line-height:1.55; }
+      .sought-list div:last-child { border-right:0; }
+      .approach-final { display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); align-items:center; background:#fff; }
+      .approach-final-copy { padding:clamp(56px,7vw,105px); }
+      .approach-final h2 { font-size:clamp(2rem,3.5vw,4.2rem); line-height:1.05; margin:0 0 24px; }
+      .approach-final img { width:100%; height:650px; object-fit:cover; object-position:center top; display:block; }
+      @media (max-width: 980px) {
+        .trust-layout, .approach-hero, .approach-block, .approach-block.reverse, .approach-work, .approach-final { grid-template-columns:1fr; }
+        .approach-hero img, .approach-final img { height:auto; min-height:0; }
+        .approach-hero-copy { padding:54px 24px; }
+        .approach-block.reverse > div:first-child { order:2; }
+        .approach-block.reverse > img { order:1; }
+        .pillar-grid { grid-template-columns:1fr; }
+        .sought-list { grid-template-columns:1fr; }
+        .sought-list div { border-right:0; border-bottom:1px solid rgba(191,161,94,.35); }
+        .sought-list div:last-child { border-bottom:0; }
+      }
+    `}</style>
+  );
+}
+
+function TrustSection({ lang }) {
+  const a = approachCopy[lang];
+  return (
+    <section className="section trust-section">
+      <div className="container trust-layout">
+        <motion.img className="trust-photo" src={approachImages.trust} alt="Paola Leite Eikeset" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65 }} />
+        <motion.div className="trust-copy" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65, delay: 0.08 }}>
+          <SectionLabel>{a.trustLabel}</SectionLabel>
+          <h2>{a.trustTitle}</h2>
+          {a.trustParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          <a className="text-link" href="/nossa-abordagem">{a.trustLink}</a>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+function ApproachPage({ lang, setLang }) {
+  const a = approachCopy[lang];
+  const openCalendar = () => window.open("https://calendar.app.google/jpvJzFyvvqbBJvU36", "_blank", "noopener,noreferrer");
+  return (
+    <div className="site approach-page">
+      <ApproachStyles />
+      <header className="header">
+        <div className="header-inner">
+          <BrandHeader />
+          <nav className="nav">
+            <a href="/#inicio">{content[lang].nav[0]}</a>
+            <a href="/#servicos">{content[lang].nav[1]}</a>
+            <a href="/nossa-abordagem" className="active">{content[lang].nav[2]}</a>
+            <a href="/#artigos">{content[lang].nav[7]}</a>
+            <a href="/#contacto">{content[lang].nav[8]}</a>
+          </nav>
+          <div className="header-actions">
+            <LanguageToggle lang={lang} setLang={setLang} />
+            <Button type="button" variant="outline" className="desktop-only" onClick={openCalendar}>{content[lang].headerButton}</Button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section className="approach-hero">
+          <img src={approachImages.window} alt="Paola Leite Eikeset junto à janela" />
+          <div className="approach-hero-copy">
+            <p className="approach-kicker">Paola Leite Eikeset Advocacia</p>
+            <h1>{a.pageTitle}</h1>
+            <p className="manifesto">{a.pageSubtitle}</p>
+            <p>{a.pageIntro}</p>
+          </div>
+        </section>
+
+        <section className="approach-block">
+          <img src={approachImages.trust} alt="Retrato profissional de Paola Leite Eikeset" />
+          <div>
+            <p className="approach-kicker">{a.trustLabel}</p>
+            <h2>{a.trustTitle}</h2>
+            {a.trustParagraphs.slice(0, 3).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          </div>
+        </section>
+
+        <section className="approach-block reverse">
+          <div>
+            <p className="approach-kicker">Portugal · Países Nórdicos</p>
+            <h2>{a.visionTitle}</h2>
+            <p>{a.visionText}</p>
+          </div>
+          <img src={approachImages.bordeaux} alt="Paola Leite Eikeset em fato bordeaux" />
+        </section>
+
+        <section className="approach-book">
+          <img src={approachImages.book} alt="Livro jurídico, caneta e computador" />
+          <div className="caption">
+            <p className="approach-kicker">Método</p>
+            <h2>{a.prepTitle}</h2>
+            <p>{a.prepText}</p>
+          </div>
+        </section>
+
+        <section className="approach-work">
+          <img src={approachImages.working} alt="Trabalho jurídico ao computador" />
+          <div>
+            <p className="approach-kicker">Rigor · Clareza · Proximidade</p>
+            <h2>{a.workTitle}</h2>
+            <div className="pillar-grid">
+              {a.pillars.map((pillar) => (
+                <div className="pillar-min" key={pillar.title}>
+                  <h3>{pillar.title}</h3>
+                  <p>{pillar.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="approach-centered">
+          <div className="inner">
+            <p className="approach-kicker">Boutique Jurídica Internacional</p>
+            <h2>{a.soughtTitle}</h2>
+            <div className="sought-list">
+              {a.soughtItems.map((item) => <div key={item}>{item}</div>)}
+            </div>
+          </div>
+        </section>
+
+        <section className="approach-centered" style={{ background: "#f8f6f2" }}>
+          <div className="inner">
+            <p className="approach-kicker">{a.commitmentTitle}</p>
+            <h2>{a.commitmentText}</h2>
+          </div>
+        </section>
+
+        <section className="approach-final">
+          <div className="approach-final-copy">
+            <p className="approach-kicker">Paola Leite Eikeset Advocacia</p>
+            <h2>{a.finalTitle}</h2>
+            <p>{a.finalText}</p>
+            <Button type="button" onClick={openCalendar}>{a.finalButton}<ArrowIcon className="arrow" /></Button>
+          </div>
+          <img src={approachImages.stripes} alt="Paola Leite Eikeset" />
+        </section>
+      </main>
+    </div>
+  );
+}
 
 function BlogList() {
   return (
@@ -522,6 +723,7 @@ function BlogArticlePage() {
 
   return (
     <div className="site">
+      <ApproachStyles />
       <header className="header">
         <div className="header-inner">
           <BrandHeader />
@@ -650,6 +852,10 @@ export default function App() {
     return <BlogArticlePage />;
   }
 
+  if (window.location.pathname.startsWith("/nossa-abordagem")) {
+    return <ApproachPage lang={lang} setLang={setLang} />;
+  }
+
   const scrollToContact = () => {
   window.open(
     "https://calendar.app.google/jpvJzFyvvqbBJvU36",
@@ -660,16 +866,18 @@ export default function App() {
   const links = [
     ["#inicio", t.nav[0]],
     ["#servicos", t.nav[1]],
-    ["#portugal-noruega", t.nav[2]],
-    ["#direito-laboral", t.nav[3]],
-    ["#direito-portugues", t.nav[4]],
-    ["#traducoes", t.nav[5]],
-    ["#artigos", t.nav[6]],
-    ["#contacto", t.nav[7]],
+    ["/nossa-abordagem", t.nav[2]],
+    ["#portugal-noruega", t.nav[3]],
+    ["#direito-laboral", t.nav[4]],
+    ["#direito-portugues", t.nav[5]],
+    ["#traducoes", t.nav[6]],
+    ["#artigos", t.nav[7]],
+    ["#contacto", t.nav[8]],
   ];
 
   return (
     <div className="site">
+      <ApproachStyles />
       <header className="header">
         <div className="header-inner">
           <BrandHeader />
@@ -795,6 +1003,8 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        <TrustSection lang={lang} />
 
         <BlogList />
 
