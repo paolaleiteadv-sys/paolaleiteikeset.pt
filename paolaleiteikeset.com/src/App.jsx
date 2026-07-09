@@ -9,6 +9,7 @@ const content = {
     heroTitle: "Advocacia Internacional. Fiscalidade. Traduções Certificadas.",
     heroText: "Soluções jurídicas entre Portugal e os países nórdicos, com estratégia, rigor e acompanhamento personalizado.",
     heroPrimary: "Agendar consulta",
+    heroSecondary: "Conheça a minha abordagem",
     servicesLabel: "Serviços",
     servicesTitle: "Precisão jurídica. Presença internacional. Identidade nórdica.",
     services: [
@@ -99,6 +100,7 @@ const content = {
     heroTitle: "International Law. Taxation. Certified Translations.",
     heroText: "Legal solutions between Portugal and the Nordic countries, with strategy, precision and personalised support.",
     heroPrimary: "Book consultation",
+    heroSecondary: "Discover my approach",
     servicesLabel: "Services",
     servicesTitle: "Legal precision. International presence. Nordic identity.",
     services: [
@@ -450,15 +452,46 @@ function BrandHeader() {
 function WebsiteVisualStyles() {
   return (
     <style>{`
-      .hero-inner { gap: clamp(28px, 5vw, 72px); }
+      html { scroll-behavior: smooth; }
+      .section { padding-top: clamp(92px, 9vw, 140px); padding-bottom: clamp(92px, 9vw, 140px); }
+      .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding-top: 96px; }
+      .hero-inner {
+        gap: clamp(38px, 6vw, 96px);
+        display: grid;
+        grid-template-columns: minmax(300px, 0.92fr) minmax(360px, 1.08fr);
+        align-items: center;
+        max-width: 1240px;
+      }
+      .hero-inner h1 {
+        font-size: clamp(2.65rem, 5vw, 5.25rem);
+        letter-spacing: -0.06em;
+        line-height: .92;
+      }
+      .hero-title {
+        font-size: clamp(1.55rem, 2.2vw, 2.45rem);
+        max-width: 780px;
+        line-height: 1.15;
+      }
+      .hero-text {
+        max-width: 680px;
+        font-size: clamp(1rem, 1.25vw, 1.18rem);
+        line-height: 1.75;
+      }
       .hero-portrait {
-        width: min(430px, 42vw);
-        max-height: 610px;
+        width: min(520px, 43vw);
+        height: clamp(560px, 72vh, 780px);
         object-fit: cover;
         object-position: center top;
-        border-radius: 28px;
-        box-shadow: 0 28px 70px rgba(15, 39, 71, 0.18);
-        border: 1px solid rgba(191, 161, 94, 0.28);
+        border-radius: 32px;
+        box-shadow: 0 32px 86px rgba(15, 39, 71, 0.2);
+        border: 1px solid rgba(191, 161, 94, 0.3);
+      }
+      .hero-actions-inline {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 28px;
       }
       .editorial-section { background: #ffffff; }
       .editorial-split {
@@ -523,11 +556,17 @@ function WebsiteVisualStyles() {
         gap: 18px;
       }
       .method-card {
-        padding: 26px;
+        padding: clamp(28px, 3vw, 38px);
         border: 1px solid rgba(15, 39, 71, 0.08);
         border-top: 3px solid rgba(191, 161, 94, 0.75);
-        border-radius: 18px;
+        border-radius: 20px;
         background: #fff;
+        transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      }
+      .method-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 38px rgba(15, 39, 71, 0.1);
+        border-color: rgba(191, 161, 94, 0.32);
       }
       .method-card h3 { color: #0f2747; margin-bottom: 10px; }
       .quote-band {
@@ -561,10 +600,25 @@ function WebsiteVisualStyles() {
         box-shadow: 0 24px 60px rgba(15, 39, 71, 0.14);
       }
       .final-cta-copy h2 { margin-bottom: 16px; }
+      .blog-editorial {
+        display: grid;
+        grid-template-columns: minmax(260px, .85fr) minmax(320px, 1.15fr);
+        gap: clamp(28px, 5vw, 64px);
+        align-items: center;
+        margin-bottom: 52px;
+      }
+      .blog-editorial img {
+        width: 100%;
+        max-height: 420px;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 24px;
+        box-shadow: 0 18px 46px rgba(15, 39, 71, .11);
+      }
       @media (max-width: 900px) {
         .hero-inner { grid-template-columns: 1fr; text-align: center; }
         .hero-portrait { width: min(520px, 92vw); margin: 0 auto; }
-        .editorial-split, .method-layout, .final-cta { grid-template-columns: 1fr; }
+        .editorial-split, .method-layout, .final-cta, .blog-editorial { grid-template-columns: 1fr; }
         .method-grid { grid-template-columns: 1fr; }
         .editorial-image, .method-photo { min-height: 380px; }
       }
@@ -642,13 +696,16 @@ function BlogList() {
   return (
     <section id="artigos" className="section section-white">
       <div className="container">
-        <div className="section-heading">
-          <SectionLabel>Artigos</SectionLabel>
-          <h2>Conhecimento Jurídico Internacional</h2>
-          <p className="lead">
-            Artigos sobre fiscalidade internacional, residência fiscal, trabalho na Noruega,
-            heranças internacionais e questões jurídicas entre Portugal e Noruega.
-          </p>
+        <div className="blog-editorial">
+          <img src="/paola-computador.jpg" alt="Paola Leite Eikeset a preparar artigos jurídicos" />
+          <div className="section-heading" style={{ textAlign: "left", marginBottom: 0 }}>
+            <SectionLabel>Artigos</SectionLabel>
+            <h2>Conhecimento Jurídico Internacional</h2>
+            <p className="lead">
+              Artigos sobre fiscalidade internacional, residência fiscal, trabalho na Noruega,
+              heranças internacionais e questões jurídicas entre Portugal e Noruega.
+            </p>
+          </div>
         </div>
 
         <div className="grid-three">
@@ -910,6 +967,7 @@ export default function App() {
 
   return (
     <div className="site">
+      <WebsiteVisualStyles />
       <header className="header">
         <div className="header-inner">
           <BrandHeader />
@@ -932,7 +990,10 @@ export default function App() {
               <div className="hero-word"><span /> <p>ADVOCACIA</p> <span /></div>
               <p className="hero-title">{t.heroTitle}</p>
               <p className="hero-text">{t.heroText}</p>
-              <Button type="button" className="hero-cta" onClick={scrollToContact}>{t.heroPrimary}<ArrowIcon className="arrow" /></Button>
+              <div className="hero-actions-inline">
+                <Button type="button" className="hero-cta" onClick={scrollToContact}>{t.heroPrimary}<ArrowIcon className="arrow" /></Button>
+                <Button type="button" variant="outline" onClick={() => document.getElementById("quem-sou")?.scrollIntoView({ behavior: "smooth" })}>{t.heroSecondary}</Button>
+              </div>
             </motion.div>
           </div>
 
