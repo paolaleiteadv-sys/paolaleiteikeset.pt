@@ -5,7 +5,7 @@ const content = {
   pt: {
     nav: ["Início", "Serviços", "A Nossa Abordagem", "Portugal–Noruega", "Direito Laboral", "Direito Português", "Traduções", "Artigos", "Contacto"],
     headerButton: "Agendar consulta",
-    heroTitle: "Advocacia especializada em Portugal e Noruega",
+    heroTitle: "Assessoria jurídica internacional entre Portugal e os países nórdicos.",
     heroText: "Advocacia Internacional • Fiscalidade Nórdica • Traduções Certificadas",
     heroPrimary: "Agendar consulta",
     servicesLabel: "Serviços",
@@ -72,7 +72,7 @@ const content = {
   en: {
     nav: ["Home", "Services", "Our Approach", "Portugal–Norway", "Employment Law", "Portuguese Law", "Translations", "Articles", "Contact"],
     headerButton: "Book consultation",
-    heroTitle: "Legal practice specialised in Portugal and Norway",
+    heroTitle: "International legal advisory between Portugal and the Nordic countries.",
     heroText: "International Law • Nordic Taxation • Certified Translations",
     heroPrimary: "Book consultation",
     servicesLabel: "Services",
@@ -256,6 +256,123 @@ const blogArticles = [
       },
     ],
   },
+
+  {
+    slug: "como-evitar-dupla-tributacao-portugal-noruega",
+    title: "Como evitar a dupla tributação entre Portugal e Noruega",
+    description:
+      "Conheça as regras da Convenção para Evitar a Dupla Tributação entre Portugal e Noruega e saiba como proteger os seus rendimentos.",
+    date: "2026-06-13",
+    category: "Fiscalidade Internacional PT–NO",
+    author: "Dra. Paola Leite Eikeset",
+    keywords:
+      "dupla tributação Portugal Noruega, convenção Portugal Noruega, residência fiscal Noruega, impostos Portugal Noruega",
+    content: [
+      {
+        heading: "Introdução",
+        text:
+          "Muitos contribuintes possuem rendimentos, património ou interesses económicos em Portugal e na Noruega. Surge então uma questão essencial: será necessário pagar imposto duas vezes sobre o mesmo rendimento?",
+      },
+      {
+        heading: "O que é a dupla tributação internacional?",
+        text:
+          "A dupla tributação ocorre quando dois países pretendem tributar o mesmo contribuinte relativamente ao mesmo rendimento e ao mesmo período temporal. Isto pode acontecer, por exemplo, quando uma pessoa é residente fiscal na Noruega, mas recebe rendimentos prediais, pensões, dividendos ou mais-valias em Portugal.",
+      },
+      {
+        heading: "A Convenção entre Portugal e Noruega",
+        text:
+          "Portugal e Noruega celebraram uma Convenção para Evitar a Dupla Tributação destinada a coordenar as competências tributárias dos dois Estados. A Convenção define qual o país com prioridade para tributar determinados rendimentos e estabelece mecanismos para evitar que o contribuinte suporte uma carga fiscal duplicada.",
+      },
+      {
+        heading: "O primeiro passo: determinar a residência fiscal",
+        text:
+          "Antes de analisar qualquer rendimento, é essencial identificar corretamente a residência fiscal do contribuinte. Muitas pessoas acreditam que trabalhar num país significa automaticamente ser residente fiscal nesse Estado, mas a análise pode envolver outros fatores, como habitação permanente, centro dos interesses vitais, localização da família, atividade profissional e ligações económicas.",
+      },
+      {
+        heading: "Rendimentos do trabalho",
+        text:
+          "Em regra, os rendimentos do trabalho dependente são tributados no país onde a atividade é exercida. Assim, um trabalhador que presta atividade na Noruega será normalmente tributado naquele país relativamente ao salário recebido, sem prejuízo de eventuais obrigações declarativas em Portugal, caso mantenha residência fiscal portuguesa ou outros rendimentos sujeitos a tributação.",
+      },
+      {
+        heading: "Imóveis situados em Portugal",
+        text:
+          "Os rendimentos provenientes de imóveis localizados em Portugal são geralmente tributados em Portugal. Isto inclui rendas e mais-valias imobiliárias. Contudo, esses rendimentos podem ter de ser declarados na Noruega se o proprietário for residente fiscal norueguês, aplicando-se então os mecanismos previstos na Convenção para evitar a dupla tributação.",
+      },
+      {
+        heading: "Pensões e outros rendimentos internacionais",
+        text:
+          "As pensões internacionais, dividendos, juros e outros rendimentos transfronteiriços exigem uma análise particularmente cuidadosa, porque diferentes categorias de rendimento podem estar sujeitas a regras distintas. A solução aplicável depende sempre da natureza do rendimento e da situação concreta do contribuinte.",
+      },
+      {
+        heading: "Como é eliminada a dupla tributação?",
+        text:
+          "A eliminação da dupla tributação pode ocorrer através de mecanismos como o crédito de imposto, a isenção ou outros métodos previstos na Convenção e na legislação interna aplicável. A aplicação prática depende da residência fiscal, da natureza do rendimento e do país que efetuou a tributação em primeiro lugar.",
+      },
+      {
+        heading: "Erros mais frequentes",
+        text:
+          "Os erros mais comuns incluem assumir uma residência fiscal incorreta, omitir rendimentos estrangeiros, não declarar imóveis ou rendimentos em ambos os países quando exigido, não aplicar corretamente a Convenção e não conservar prova documental suficiente perante as autoridades fiscais.",
+      },
+      {
+        heading: "Conclusão",
+        text:
+          "A Convenção para Evitar a Dupla Tributação entre Portugal e Noruega é um instrumento essencial para trabalhadores, empresários, investidores e pensionistas com ligações aos dois países. A sua aplicação exige análise individualizada e estratégia fiscal adequada.",
+      },
+    ],
+  },
+  {
+    slug: "baixa-medica-noruega-direitos-trabalhador-portugues",
+    title: "Baixa médica na Noruega: direitos do trabalhador português",
+    description:
+      "Saiba quais são os principais direitos do trabalhador português em situação de baixa médica na Noruega e como atuar perante empregador, NAV e documentação clínica.",
+    date: "2026-07-09",
+    category: "Direito Laboral Norueguês",
+    author: "Dra. Paola Leite Eikeset",
+    keywords:
+      "baixa médica Noruega, trabalhador português Noruega, NAV baixa médica, direitos laborais Noruega, sykepenger Noruega",
+    content: [
+      {
+        heading: "Introdução",
+        text:
+          "A baixa médica na Noruega pode gerar dúvidas importantes para trabalhadores portugueses, especialmente quando existem barreiras linguísticas, desconhecimento das regras do NAV ou pressão por parte do empregador. Compreender os direitos aplicáveis é essencial para proteger a situação laboral e económica do trabalhador.",
+      },
+      {
+        heading: "Baixa médica e proteção do trabalhador",
+        text:
+          "O trabalhador em situação de doença deve comunicar adequadamente a ausência, cumprir os procedimentos aplicáveis e assegurar que a documentação médica está corretamente emitida. A proteção durante a baixa médica depende também da regularidade da relação laboral e do cumprimento dos requisitos legais.",
+      },
+      {
+        heading: "O papel do empregador",
+        text:
+          "O empregador tem deveres específicos durante o período de doença, incluindo o acompanhamento da situação, a eventual adaptação de funções e a cooperação no processo de regresso ao trabalho. A pressão indevida, ameaças ou tratamento discriminatório podem justificar análise jurídica.",
+      },
+      {
+        heading: "NAV e prestações durante a doença",
+        text:
+          "O NAV desempenha um papel central na atribuição de prestações relacionadas com doença. A falta de documentos, atrasos ou informações contraditórias podem comprometer o pagamento, pelo que é importante organizar cuidadosamente todos os elementos clínicos e laborais.",
+      },
+      {
+        heading: "Despedimento durante baixa médica",
+        text:
+          "A situação de baixa médica não deve ser utilizada como fundamento automático para despedimento. Qualquer cessação do contrato durante doença deve ser analisada com especial cautela, atendendo à proteção legal do trabalhador e às circunstâncias concretas do caso.",
+      },
+      {
+        heading: "Erros frequentes",
+        text:
+          "Entre os erros mais comuns estão não guardar comunicações com o empregador, não pedir cópia de documentos, não confirmar prazos do NAV, aceitar pressões verbais sem registo escrito e não procurar apoio jurídico antes de assinar acordos ou declarações.",
+      },
+      {
+        heading: "Quando procurar apoio jurídico?",
+        text:
+          "É aconselhável procurar apoio jurídico quando existe ameaça de despedimento, suspensão de pagamento, pressão para regressar ao trabalho, conflito com o empregador, recusa de documentos ou dificuldade de comunicação com o NAV.",
+      },
+      {
+        heading: "Conclusão",
+        text:
+          "A baixa médica na Noruega exige atenção aos procedimentos, à documentação e à comunicação com o empregador e com o NAV. Uma estratégia preventiva pode evitar perda de direitos, conflitos laborais e decisões precipitadas.",
+      },
+    ],
+  },
 ];
 
 function runSelfTests() {
@@ -324,7 +441,7 @@ function BrandHeader() {
       <img src="/logo.jpg" alt="Paola Leite Eikeset Advocacia" />
       <div className="brand-header-text">
         <p>PAOLA LEITE EIKESET</p>
-        <div><span /> <strong>ADVOCACIA</strong> <span /></div>
+        <div><span /> <strong>ADVOCACIA INTERNACIONAL & FISCALIDADE NÓRDICA</strong> <span /></div>
       </div>
     </a>
   );
@@ -412,12 +529,14 @@ const approachCopy = {
 };
 
 const approachImages = {
-  trust: "/paola-confianca.jpeg",
-  stripes: "/paola-riscas.jpeg",
-  working: "/paola-computador.jpeg",
-  bordeaux: "/paola-bordeaux.jpeg",
-  window: "/paola-janela.jpeg",
-  book: "/paola-livro.jpeg",
+  trust: "/paola-confianca-2026.jpeg",
+  stripes: "/paola-sorriso.jpeg",
+  working: "/paola-laptop-modern.jpeg",
+  bordeaux: "/paola-bordeaux-premium.jpeg",
+  window: "/paola-reflexao.jpeg",
+  book: "/paola-estudo-bw.jpeg",
+  laptopBw: "/paola-laptop-bw.jpeg",
+  azul: "/paola-azul.jpeg",
 };
 
 function ApproachStyles() {
@@ -605,7 +724,7 @@ function BlogList() {
     <section id="artigos" className="section section-white">
       <div className="container">
         <div className="section-heading">
-          <SectionLabel>Artigos</SectionLabel>
+          <SectionLabel>Biblioteca Jurídica</SectionLabel>
           <h2>Conhecimento Jurídico Internacional</h2>
           <p className="lead">
             Artigos sobre fiscalidade internacional, residência fiscal, trabalho na Noruega,
@@ -896,7 +1015,7 @@ export default function App() {
             <motion.img src="/logo.jpg" alt="Paola Leite Eikeset Advocacia" className="hero-logo" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} />
             <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }}>
               <h1>PAOLA LEITE EIKESET</h1>
-              <div className="hero-word"><span /> <p>ADVOCACIA</p> <span /></div>
+              <div className="hero-word"><span /> <p>ADVOCACIA INTERNACIONAL & FISCALIDADE NÓRDICA</p> <span /></div>
               <p className="hero-title">{t.heroTitle}</p>
               <p className="hero-text">{t.heroText}</p>
               <Button type="button" className="hero-cta" onClick={scrollToContact}>{t.heroPrimary}<ArrowIcon className="arrow" /></Button>
@@ -1026,7 +1145,7 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <form className="form" action="https://formspree.io/f/mgoqjnzy" method="POST">
+            <form className="form" action="https://formspree.io/f/mgoqjnzy" method="POST" encType="multipart/form-data">
               <input type="hidden" name="subject" value="Novo pedido de contacto - Paola Leite Eikeset Advocacia" />
               <input name="nome" placeholder={t.formName} type="text" required />
               <input name="email" placeholder={t.formEmail} type="email" required />
@@ -1041,6 +1160,7 @@ export default function App() {
                 {t.urgencyOptions.map((option) => <option key={option}>{option}</option>)}
               </select>
               <textarea name="mensagem" placeholder={t.formMessage} required />
+              <input name="documentos" type="file" multiple />
               <Button type="submit">{t.formSubmit}</Button>
             </form>
           </div>
