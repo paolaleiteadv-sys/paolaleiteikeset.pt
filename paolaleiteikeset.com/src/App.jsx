@@ -425,13 +425,13 @@ function ApproachStyles() {
     <style>{`
       .trust-section { background:#fff; border-top:1px solid rgba(15,39,71,.06); border-bottom:1px solid rgba(15,39,71,.06); }
       .trust-layout { display:grid; grid-template-columns:minmax(280px,.88fr) minmax(320px,1.12fr); gap:clamp(34px,6vw,86px); align-items:center; }
-      .trust-photo { width:100%; border-radius:26px; object-fit:cover; object-position:center top; box-shadow:0 24px 60px rgba(15,39,71,.11); }
+      .trust-photo { width:100%; height:auto; max-height:none; object-fit:contain; object-position:center; border-radius:26px; box-shadow:0 24px 60px rgba(15,39,71,.11); background:#f8f6f2; }
       .trust-copy h2 { margin-bottom:22px; }
       .trust-copy p { margin-bottom:16px; }
       .text-link { display:inline-flex; align-items:center; margin-top:12px; color:#0f2747; font-weight:800; text-decoration:none; border-bottom:1px solid rgba(191,161,94,.65); padding-bottom:6px; }
       .approach-page { background:#fff; color:#0f2747; }
-      .approach-hero { min-height:72vh; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; background:linear-gradient(90deg,#f8f6f2 0%, #fff 55%); }
-      .approach-hero img { width:100%; height:72vh; min-height:560px; object-fit:cover; object-position:center; display:block; }
+      .approach-hero { min-height:auto; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; background:linear-gradient(90deg,#f8f6f2 0%, #fff 55%); }
+      .approach-hero img { width:100%; height:auto; max-height:78vh; object-fit:contain; object-position:center; display:block; background:#f8f6f2; }
       .approach-hero-copy { padding:clamp(48px,7vw,110px); }
       .approach-kicker { color:#bfa15e; text-transform:uppercase; letter-spacing:.16em; font-size:.74rem; font-weight:800; margin-bottom:22px; }
       .approach-hero h1, .approach-block h2, .approach-centered h2, .approach-final h2 { color:#0f2747; letter-spacing:-.04em; }
@@ -440,13 +440,13 @@ function ApproachStyles() {
       .approach-hero p, .approach-block p, .approach-centered p, .approach-final p { color:#405066; line-height:1.85; font-size:1.03rem; }
       .approach-block { display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); gap:clamp(34px,6vw,86px); align-items:center; padding:clamp(70px,8vw,120px) max(24px, calc((100vw - 1180px)/2)); }
       .approach-block.reverse { grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); }
-      .approach-block img { width:100%; border-radius:26px; object-fit:cover; max-height:680px; box-shadow:0 24px 60px rgba(15,39,71,.10); }
+      .approach-block img { width:100%; height:auto; max-height:none; border-radius:26px; object-fit:contain; object-position:center; box-shadow:0 24px 60px rgba(15,39,71,.10); background:#f8f6f2; }
       .approach-block h2 { font-size:clamp(2rem,3.2vw,3.8rem); line-height:1.05; margin:0 0 24px; }
       .approach-book { padding:clamp(60px,8vw,110px) max(24px, calc((100vw - 1180px)/2)); background:#f8f6f2; }
-      .approach-book img { width:100%; max-height:720px; object-fit:cover; border-radius:26px; display:block; margin-bottom:34px; }
+      .approach-book img { width:100%; height:auto; max-height:none; object-fit:contain; object-position:center; border-radius:26px; display:block; margin-bottom:34px; background:#fff; }
       .approach-book .caption { max-width:820px; }
       .approach-work { padding:clamp(70px,8vw,120px) max(24px, calc((100vw - 1180px)/2)); display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); gap:clamp(34px,6vw,86px); align-items:center; }
-      .approach-work img { width:100%; border-radius:26px; object-fit:cover; max-height:680px; box-shadow:0 24px 60px rgba(15,39,71,.10); }
+      .approach-work img { width:100%; height:auto; max-height:none; border-radius:26px; object-fit:contain; object-position:center; box-shadow:0 24px 60px rgba(15,39,71,.10); background:#f8f6f2; }
       .pillar-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:28px; }
       .pillar-min { border-top:2px solid rgba(191,161,94,.72); padding-top:18px; }
       .pillar-min h3 { color:#0f2747; margin:0 0 10px; font-size:1.05rem; }
@@ -460,10 +460,10 @@ function ApproachStyles() {
       .approach-final { display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); align-items:center; background:#fff; }
       .approach-final-copy { padding:clamp(56px,7vw,105px); }
       .approach-final h2 { font-size:clamp(2rem,3.5vw,4.2rem); line-height:1.05; margin:0 0 24px; }
-      .approach-final img { width:100%; height:650px; object-fit:cover; object-position:center top; display:block; }
+      .approach-final img { width:100%; height:auto; max-height:none; object-fit:contain; object-position:center; display:block; background:#f8f6f2; }
       @media (max-width: 980px) {
         .trust-layout, .approach-hero, .approach-block, .approach-block.reverse, .approach-work, .approach-final { grid-template-columns:1fr; }
-        .approach-hero img, .approach-final img { height:auto; min-height:0; }
+        .approach-hero img, .approach-final img { height:auto; min-height:0; max-height:none; }
         .approach-hero-copy { padding:54px 24px; }
         .approach-block.reverse > div:first-child { order:2; }
         .approach-block.reverse > img { order:1; }
