@@ -6,8 +6,8 @@ const content = {
   pt: {
     nav: ["Início", "Serviços", "Portugal–Noruega", "Direito Laboral", "Direito Português", "Traduções", "Artigos", "Contacto"],
     headerButton: "Agendar consulta",
-    heroTitle: "Advocacia especializada em Portugal e Noruega",
-    heroText: "Advocacia Internacional • Fiscalidade Nórdica • Traduções Certificadas",
+    heroTitle: "Advocacia Internacional. Fiscalidade. Traduções Certificadas.",
+    heroText: "Soluções jurídicas entre Portugal e os países nórdicos, com estratégia, rigor e acompanhamento personalizado.",
     heroPrimary: "Agendar consulta",
     servicesLabel: "Serviços",
     servicesTitle: "Precisão jurídica. Presença internacional. Identidade nórdica.",
@@ -24,6 +24,29 @@ const content = {
       { icon: "◷", title: "Resposta rápida", text: "Análise célere do seu caso e orientação eficaz." },
       { icon: "▤", title: "Resultados", text: "Compromisso com soluções jurídicas eficazes." },
     ],
+
+    aboutLabel: "Uma Advocacia sem Fronteiras",
+    aboutTitle: "Muito mais do que um processo.",
+    aboutLead: "Cada decisão jurídica representa uma escolha com impacto na vida de alguém.",
+    aboutParagraphs: [
+      "Foi essa convicção que me levou a construir uma prática jurídica orientada pela estratégia, pelo rigor técnico e pela proximidade com cada cliente.",
+      "Ao longo do meu percurso, compreendi que os processos internacionais exigem muito mais do que um conhecimento aprofundado da lei. Exigem capacidade para interpretar diferentes sistemas jurídicos, compreender realidades culturais distintas e transformar essa complexidade em soluções claras, eficazes e seguras.",
+      "É precisamente nessa interseção entre Portugal e os países nórdicos que desenvolvi a minha atividade, acompanhando trabalhadores, empresários, investidores e famílias que necessitam de apoio jurídico e fiscal além-fronteiras.",
+      "Presto igualmente serviços de traduções certificadas para efeitos legais e administrativos, assegurando segurança documental perante entidades públicas e privadas.",
+      "Acredito que a verdadeira advocacia não começa quando surge um problema. Começa muito antes, através da prevenção, da estratégia e da antecipação dos riscos.",
+      "Mais do que representar clientes, represento os seus interesses, os seus projetos e, muitas vezes, momentos decisivos das suas vidas."
+    ],
+    aboutQuote: "Quando diferentes países, sistemas jurídicos e culturas se cruzam, cada decisão exige mais do que conhecimento jurídico. Exige estratégia.",
+    methodLabel: "A minha forma de trabalhar",
+    methodItems: [
+      { title: "Estratégia antes da ação", text: "Cada decisão começa com uma análise cuidada, identificação de riscos e uma visão de longo prazo." },
+      { title: "Rigor técnico", text: "O detalhe faz frequentemente a diferença entre uma solução aceitável e a melhor solução possível." },
+      { title: "Comunicação clara", text: "Compreender o processo é tão importante quanto encontrar a melhor solução." },
+      { title: "Compromisso", text: "Cada cliente merece acompanhamento próximo, confidencialidade e dedicação." },
+    ],
+    finalCtaTitle: "Vamos encontrar a melhor estratégia para o seu caso.",
+    finalCtaText: "Cada situação exige uma análise própria. Se procura acompanhamento jurídico internacional, terei todo o gosto em analisar o seu pedido.",
+    finalCtaButton: "Entrar em contacto",
     ptNoLabel: "Portugal–Noruega",
     ptNoTitle: "Quando dois sistemas jurídicos se cruzam, os detalhes decidem o resultado.",
     ptNoText: "O acompanhamento certo evita atrasos, indeferimentos, bloqueios bancários, perda de direitos sociais, problemas fiscais e documentos recusados por autoridades estrangeiras.",
@@ -73,8 +96,8 @@ const content = {
   en: {
     nav: ["Home", "Services", "Portugal–Norway", "Employment Law", "Portuguese Law", "Translations", "Articles", "Contact"],
     headerButton: "Book consultation",
-    heroTitle: "Legal practice specialised in Portugal and Norway",
-    heroText: "International Law • Nordic Taxation • Certified Translations",
+    heroTitle: "International Law. Taxation. Certified Translations.",
+    heroText: "Legal solutions between Portugal and the Nordic countries, with strategy, precision and personalised support.",
     heroPrimary: "Book consultation",
     servicesLabel: "Services",
     servicesTitle: "Legal precision. International presence. Nordic identity.",
@@ -91,6 +114,29 @@ const content = {
       { icon: "◷", title: "Fast response", text: "Prompt case review and effective guidance." },
       { icon: "▤", title: "Results", text: "Committed to effective legal solutions." },
     ],
+
+    aboutLabel: "Legal Practice Without Borders",
+    aboutTitle: "Much more than a case.",
+    aboutLead: "Every legal decision represents a choice with an impact on someone’s life.",
+    aboutParagraphs: [
+      "This conviction led me to build a legal practice guided by strategy, technical precision and close support for each client.",
+      "Throughout my career, I have understood that international matters require far more than legal knowledge. They require the ability to interpret different legal systems, understand distinct cultural realities and transform complexity into clear, effective and secure solutions.",
+      "It is precisely at this intersection between Portugal and the Nordic countries that I have developed my work, assisting workers, entrepreneurs, investors and families who need cross-border legal and tax support.",
+      "I also provide certified translations for legal and administrative purposes, ensuring documentary security before public and private entities.",
+      "I believe true legal support does not begin only when a problem arises. It begins earlier, through prevention, strategy and risk anticipation.",
+      "More than representing clients, I represent their interests, their projects and, often, decisive moments in their lives."
+    ],
+    aboutQuote: "When different countries, legal systems and cultures intersect, every decision requires more than legal knowledge. It requires strategy.",
+    methodLabel: "My way of working",
+    methodItems: [
+      { title: "Strategy before action", text: "Every decision starts with careful analysis, risk identification and a long-term view." },
+      { title: "Technical precision", text: "Detail often makes the difference between an acceptable solution and the best possible solution." },
+      { title: "Clear communication", text: "Understanding the process is as important as finding the right solution." },
+      { title: "Commitment", text: "Each client deserves close support, confidentiality and dedication." },
+    ],
+    finalCtaTitle: "Let us find the best strategy for your case.",
+    finalCtaText: "Each situation requires its own assessment. If you need international legal support, I will be pleased to review your request.",
+    finalCtaButton: "Get in touch",
     ptNoLabel: "Portugal–Norway",
     ptNoTitle: "When two legal systems intersect, details decide the outcome.",
     ptNoText: "Proper support helps prevent delays, refusals, bank restrictions, loss of social rights, tax problems and documents being rejected by foreign authorities.",
@@ -400,6 +446,198 @@ function BrandHeader() {
 }
 
 
+
+function WebsiteVisualStyles() {
+  return (
+    <style>{`
+      .hero-inner { gap: clamp(28px, 5vw, 72px); }
+      .hero-portrait {
+        width: min(430px, 42vw);
+        max-height: 610px;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 28px;
+        box-shadow: 0 28px 70px rgba(15, 39, 71, 0.18);
+        border: 1px solid rgba(191, 161, 94, 0.28);
+      }
+      .editorial-section { background: #ffffff; }
+      .editorial-split {
+        display: grid;
+        grid-template-columns: minmax(280px, 0.85fr) minmax(320px, 1.15fr);
+        gap: clamp(34px, 6vw, 86px);
+        align-items: center;
+      }
+      .editorial-image-wrap { position: relative; }
+      .editorial-image-wrap::before {
+        content: "";
+        position: absolute;
+        inset: 18px -18px -18px 18px;
+        border: 1px solid rgba(191, 161, 94, 0.42);
+        border-radius: 28px;
+        z-index: 0;
+      }
+      .editorial-image {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        min-height: 520px;
+        max-height: 680px;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 28px;
+        box-shadow: 0 24px 64px rgba(15, 39, 71, 0.13);
+      }
+      .editorial-copy h2 { margin-bottom: 18px; }
+      .editorial-kicker {
+        font-size: 1.3rem;
+        line-height: 1.55;
+        color: #0f2747;
+        font-weight: 650;
+        margin-bottom: 22px;
+      }
+      .editorial-copy p { margin-bottom: 16px; }
+      .signature-line {
+        margin-top: 28px;
+        padding-top: 22px;
+        border-top: 1px solid rgba(191, 161, 94, 0.42);
+        color: #0f2747;
+        font-weight: 700;
+      }
+      .method-section { background: #ffffff; }
+      .method-layout {
+        display: grid;
+        grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+        gap: clamp(28px, 5vw, 70px);
+        align-items: center;
+      }
+      .method-photo {
+        width: 100%;
+        min-height: 430px;
+        object-fit: cover;
+        border-radius: 26px;
+        box-shadow: 0 22px 54px rgba(15, 39, 71, 0.12);
+      }
+      .method-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .method-card {
+        padding: 26px;
+        border: 1px solid rgba(15, 39, 71, 0.08);
+        border-top: 3px solid rgba(191, 161, 94, 0.75);
+        border-radius: 18px;
+        background: #fff;
+      }
+      .method-card h3 { color: #0f2747; margin-bottom: 10px; }
+      .quote-band {
+        background: #ffffff;
+        padding: clamp(70px, 9vw, 115px) 0;
+        border-top: 1px solid rgba(15, 39, 71, 0.06);
+        border-bottom: 1px solid rgba(15, 39, 71, 0.06);
+      }
+      .quote-band blockquote {
+        max-width: 980px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: clamp(1.7rem, 3.2vw, 3rem);
+        line-height: 1.25;
+        color: #0f2747;
+        font-weight: 650;
+        letter-spacing: -0.04em;
+      }
+      .final-cta {
+        display: grid;
+        grid-template-columns: minmax(280px, .8fr) minmax(320px, 1.2fr);
+        gap: clamp(30px, 5vw, 72px);
+        align-items: center;
+      }
+      .final-cta img {
+        width: 100%;
+        max-height: 520px;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 26px;
+        box-shadow: 0 24px 60px rgba(15, 39, 71, 0.14);
+      }
+      .final-cta-copy h2 { margin-bottom: 16px; }
+      @media (max-width: 900px) {
+        .hero-inner { grid-template-columns: 1fr; text-align: center; }
+        .hero-portrait { width: min(520px, 92vw); margin: 0 auto; }
+        .editorial-split, .method-layout, .final-cta { grid-template-columns: 1fr; }
+        .method-grid { grid-template-columns: 1fr; }
+        .editorial-image, .method-photo { min-height: 380px; }
+      }
+    `}</style>
+  );
+}
+
+function AboutSection({ t }) {
+  return (
+    <section id="quem-sou" className="section editorial-section">
+      <div className="container editorial-split">
+        <motion.div className="editorial-image-wrap" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65 }}>
+          <img className="editorial-image" src="/paola-janela.jpg" alt="Paola Leite Eikeset em ambiente profissional" />
+        </motion.div>
+        <motion.div className="editorial-copy" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65, delay: 0.08 }}>
+          <SectionLabel>{t.aboutLabel}</SectionLabel>
+          <h2>{t.aboutTitle}</h2>
+          <p className="editorial-kicker">{t.aboutLead}</p>
+          {t.aboutParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          <p className="signature-line">Paola Leite Eikeset<br /><span>Advogada | Tradutora Certificada</span></p>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+function MethodSection({ t }) {
+  return (
+    <section className="section method-section">
+      <div className="container method-layout">
+        <motion.img className="method-photo" src="/paola-computador.jpg" alt="Paola Leite Eikeset a trabalhar no computador" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65 }} />
+        <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65, delay: 0.08 }}>
+          <SectionLabel>{t.methodLabel}</SectionLabel>
+          <div className="method-grid">
+            {t.methodItems.map((item) => (
+              <div className="method-card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+function QuoteBand({ text }) {
+  return (
+    <section className="quote-band">
+      <div className="container">
+        <blockquote>“{text}”</blockquote>
+      </div>
+    </section>
+  );
+}
+
+function FinalContactCta({ t, onClick }) {
+  return (
+    <section className="section section-white">
+      <div className="container final-cta">
+        <img src="/paola-riscas.jpg" alt="Paola Leite Eikeset" />
+        <div className="final-cta-copy">
+          <SectionLabel>{t.contactLabel}</SectionLabel>
+          <h2>{t.finalCtaTitle}</h2>
+          <p className="lead">{t.finalCtaText}</p>
+          <Button type="button" onClick={onClick}>{t.finalCtaButton}<ArrowIcon className="arrow" /></Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function BlogList() {
   return (
     <section id="artigos" className="section section-white">
@@ -523,6 +761,7 @@ function BlogArticlePage() {
 
   return (
     <div className="site">
+      <WebsiteVisualStyles />
       <header className="header">
         <div className="header-inner">
           <BrandHeader />
@@ -686,8 +925,9 @@ export default function App() {
         <section id="inicio" className="hero">
           <div className="hero-bg" />
           <div className="hero-inner">
-            <motion.img src="/logo.jpg" alt="Paola Leite Eikeset Advocacia" className="hero-logo" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} />
+            <motion.img src="/paola-hero.jpg" alt="Paola Leite Eikeset" className="hero-portrait" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} />
             <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }}>
+              <img src="/logo.jpg" alt="Paola Leite Eikeset Advocacia" className="hero-logo" />
               <h1>PAOLA LEITE EIKESET</h1>
               <div className="hero-word"><span /> <p>ADVOCACIA</p> <span /></div>
               <p className="hero-title">{t.heroTitle}</p>
@@ -726,6 +966,12 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        <AboutSection t={t} />
+
+        <MethodSection t={t} />
+
+        <QuoteBand text={t.aboutQuote} />
 
         <section id="portugal-noruega" className="section section-dark">
           <div className="container split">
@@ -798,6 +1044,8 @@ export default function App() {
         </section>
 
         <BlogList />
+
+        <FinalContactCta t={t} onClick={scrollToContact} />
 
         <section id="contacto" className="section">
           <div className="container contact-box">
