@@ -1,0 +1,16 @@
+export const images = {
+  logoFullGold: "/images/logo-full-gold.png",
+  logoFullWhite: "/images/logo-full-white.png",
+  logoIconGold: "/images/logo-icon-gold.png",
+  logoIconWhite: "/images/logo-icon-white.png",
+  hero: "/images/hero-paola-azul.png",
+  whiteProfile: "/images/paola-branco-perfil.png",
+  taxBook: "/images/paola-livro-tributario.jpeg",
+  bookLaptop: "/images/paola-livro-portatil.jpeg",
+  laptopLogo: "/images/paola-portatil-logo.jpeg",
+  laptopWork: "/images/paola-portatil-trabalho.jpeg",
+  sofaBeige: "/images/paola-sofa-bege.png",
+  blackPortrait: "/images/paola-preto-retrato.png",
+  bordeaux: "/images/paola-bordeaux.png",
+  laptopBw: "/images/paola-portatil-bw.jpeg",
+};
