@@ -1,0 +1,2 @@
+import { WHATSAPP_URL } from '../data/content';
+export default function Footer({t}){return <><a className="whatsapp" href={WHATSAPP_URL} target="_blank" rel="noreferrer">WhatsApp</a><footer><img src="/images/logo.png" alt="Paola Leite Eikeset"/><p>Advocacia Internacional<br/>Fiscalidade Nórdica<br/>Traduções Certificadas</p><p>© {new Date().getFullYear()} Paola Leite Eikeset.<br/>{t.rights}</p></footer></>}

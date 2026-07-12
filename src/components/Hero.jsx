@@ -1,0 +1,2 @@
+import { CALENDAR_URL } from '../data/content';
+export default function Hero({t}){return <section id="inicio" className="hero"><div className="hero-copy"><p className="eyebrow">{t.heroEyebrow}</p><h1>{t.heroTitle}</h1><p>{t.heroText}</p><div className="hero-buttons"><a className="button" href={CALENDAR_URL} target="_blank" rel="noreferrer">{t.book}</a><a className="button outline" href="#especialidades">{t.explore}</a></div></div><div className="hero-photo"><img src="/images/paola-hero.png" alt="Paola Leite Eikeset"/></div></section>}

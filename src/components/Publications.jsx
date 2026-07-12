@@ -1,0 +1,2 @@
+import { articles } from '../data/content';
+export default function Publications({t}){return <section id="publicacoes" className="section publications"><div className="heading"><p className="section-label">{t.publications}</p><h2>{t.publications}</h2></div><div className="article-grid">{articles.map((a,i)=><article className="article" key={a.slug}><div className={`article-visual v${i+1}`}><span>{a.category}</span></div><p className="category">{a.category}</p><h3>{a.title}</h3><p>{a.excerpt}</p><a href={`/blog/${a.slug}`}>Ler artigo →</a></article>)}</div></section>}
