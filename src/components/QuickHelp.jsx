@@ -1,2 +1,0 @@
-import { Home, BriefcaseBusiness, Globe2, FileText } from 'lucide-react'; const icons=[Home,BriefcaseBusiness,Globe2,FileText];
-export default function QuickHelp({t}){return <section className="quick"><h2>{t.helpTitle}</h2><div className="quick-grid">{t.help.map(([a,b],i)=>{const I=icons[i];return <a href={i===3?'#contacto':'#especialidades'} className="quick-item" key={a}><I/><strong>{a}</strong><span>{b}</span></a>})}</div></section>}

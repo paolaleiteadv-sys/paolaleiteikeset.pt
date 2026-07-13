@@ -1,1 +1,0 @@
-export default function Approach({t}){return <section className="approach"><div className="approach-photo"><img src="/images/paola-abordagem.png" alt="A nossa abordagem"/></div><div className="approach-copy"><p className="section-label">{t.approachLabel}</p><h2>{t.approachTitle}</h2><p>{t.approachText}</p><div className="rule"/></div></section>}

@@ -1,2 +1,0 @@
-import { Landmark, Users, Scale, Languages } from 'lucide-react'; const icons=[Landmark,Users,Scale,Languages];
-export default function Expertise({t}){return <section id="especialidades" className="section"><div className="heading"><p className="section-label">{t.areasTitle}</p><h2>{t.areasTitle}</h2></div><div className="areas">{t.areas.map(([a,b],i)=>{const I=icons[i];return <article key={a}><I/><h3>{a}</h3><p>{b}</p><a href="#contacto">Saber mais →</a></article>})}</div></section>}
