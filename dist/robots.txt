@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://paolaleiteikeset.pt/sitemap.xml
