@@ -10,4 +10,5 @@ npm run dev
 ```
 
 ## Publicação
+
 Compatível com GitHub + Vercel. Consulte `GUIA-DE-ALTERACOES.md`.

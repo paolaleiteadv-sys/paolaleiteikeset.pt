@@ -9,5 +9,5 @@ export const settings = {
   formspree: 'https://formspree.io/f/mgoqjnzy',
   address: 'Rua de Camões, 219, 4.º Esq., 4000-145 Porto',
   secondLocation: 'Oslo, Noruega',
-  website: 'https://paolaleiteikeset.pt'
-}
+  website: 'https://paolaleiteikeset.pt',
+};

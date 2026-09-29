@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Environment variables (keep secrets out of git)
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel/
+
+# Logs and caches
+*.log
+npm-debug.log*
+.eslintcache
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# JetBrains: ignore personal settings, keep the shared on-save setup
+.idea/*
+!.idea/prettier.xml
+!.idea/jsLinters/
